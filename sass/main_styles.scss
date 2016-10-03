@@ -1,0 +1,122 @@
+
+@import "compass/reset";
+
+@font-face {
+  font-family: 'MonotypeCorsiva';
+  src: url('../resources/MonotypeCorsiva/MonotypeCorsiva.woff') format('woff'),
+       url('../resources/MonotypeCorsiva/MonotypeCorsiva.ttf') format('truetype'),
+       url('../resources/MonotypeCorsiva/MonotypeCorsiva.svg#MonotypeCorsiva') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonotypeCorsiva';
+  src: url('../resources/MonotypeCorsiva/mtcorsva.eot');
+  src: url('../resources/MonotypeCorsiva/mtcorsva.woff2') format('woff2'),
+       url('../resources/MonotypeCorsiva/mtcorsva.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background: #fff;
+}
+
+$OpenSans: 'Open Sans', sans-serif;
+$MonotypeCorsiva: 'MonotypeCorsiva', sans-serif;
+
+@mixin site-container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	background-size: contain;
+	background-position: center;
+}
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin site-pagination {
+	.pagination-list {
+		@include border-box;
+		width: 100%;
+		margin: 34px auto 31px;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 0 3px;
+
+			a {
+				color: #535353;
+				font: 700 16px / 24px $Roboto;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+@mixin direction {
+	@include site-container;
+	padding: 10px 0 11px;
+	background-color: #d5dde1;
+	.arrow-back {
+		float: left;
+	}
+	.direction-title {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: #069df1;
+			font: 400 18px / 25px #OpenSans;
+			text-transform: uppercase;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+@mixin mapWrapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+}
+
+.wrapper {
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include border-box;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+.direction {
+	@include direction;
+}
+
+// include header
+@import "header.scss";
