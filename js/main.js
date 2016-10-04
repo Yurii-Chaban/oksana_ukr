@@ -46,6 +46,18 @@ $(function () {
     });
 });
 
+// lenguage block
+$(function () {
+    $('.pagination-list li a').each(function () {
+        var location = window.location.pathname;
+        var link = this.pathname;
+        var result = location.match(link);
+        if(result && link.length > 0) {
+            $(this).addClass('pagination-active');
+        }
+    });
+});
+
 // for slider in Home page
 var swiper_main = new Swiper('.swiper-container-home-page', {
     pagination: '.swiper-pagination',

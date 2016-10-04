@@ -63,17 +63,24 @@ $MonotypeCorsiva: 'MonotypeCorsiva', sans-serif;
 			margin: 0 3px;
 
 			a {
-				color: #535353;
-				font: 700 16px / 24px $Roboto;
+				font: 700 18px / 20px $OpenSans;
 				text-transform: uppercase;
+				color: black;
+
+				&:hover {
+					color: #fd9e0e;
+				}
+			}
+			a.pagination-active {
+				color: #fd9e0e;
 			}
 		}
 	}
 }
 @mixin direction {
 	@include site-container;
-	padding: 10px 0 11px;
-	background-color: #d5dde1;
+	padding: 10px 0;
+	background-color: #f19811;
 	.arrow-back {
 		float: left;
 	}
@@ -82,8 +89,8 @@ $MonotypeCorsiva: 'MonotypeCorsiva', sans-serif;
 		text-align: center;
 		a {
 			color: #069df1;
-			font: 400 18px / 25px #OpenSans;
-			text-transform: uppercase;
+			color: white;
+			font: 400 15px / 20px $OpenSans;
 			text-transform: uppercase;
 		}
 	}
@@ -104,24 +111,6 @@ $MonotypeCorsiva: 'MonotypeCorsiva', sans-serif;
 	}
 }
 
-@mixin direction {
-	@include site-container;
-	padding: 10px 0 11px;
-	background-color: #f19811;
-	.arrow-back {
-		float: left;
-	}
-	.direction-title {
-		margin: 0 auto;
-		text-align: center;
-		a {
-			color: #069df1;
-			color: white;
-			font: 400 15px / 25px $OpenSans;
-			text-transform: uppercase;
-		}
-	}
-}
 
 @mixin section-title {
 	position: relative;
@@ -165,4 +154,5 @@ a {
 @import "main-page.scss";
 @import "about.scss";
 @import "services.scss";
+@import "reviews.scss";
 @import "media.scss";

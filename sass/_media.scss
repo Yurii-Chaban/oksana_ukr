@@ -127,6 +127,36 @@
 			}
 		}
 	}
+	// FOR REVIEWS PAGE
+	.reviews-page {
+		.reviews-content {
+			.reviews-list {
+				li {
+					overflow: hidden;
+					clear: both;
+					.reviews-img-container {
+						float: left;
+						margin: 0 15px 0 0;
+					}
+
+					.overflow-block {
+						overflow: hidden;
+					}
+
+					.person-name {
+						margin: 0 0 10px;
+					}
+					.post-content {
+						margin: 15px auto 0;
+						font-size: 16px;
+						span {
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
