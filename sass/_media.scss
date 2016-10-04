@@ -165,6 +165,7 @@
 		display: none;
 	}
 
+
 	header {
 		overflow: hidden;
 		max-height: 113px;
@@ -236,8 +237,8 @@
 				li {
 					display: block;
 					float: left;
-					margin: 0 15px;
-					padding: 0 25px 0 0;
+					margin: 0 10px;
+					padding: 0 17px 0 0;
 					border-right: 1px solid #f0e9e0;
 
 					&:first-child {
@@ -286,6 +287,33 @@
 	.home-about-description {
 		.visible-description {
 			display: inline;
+		}
+	}
+}
+
+.about-page,
+.services-page,
+.reviews-page {
+	.about-content,
+	.services-content,
+	.reviews-content {
+		.section-title {
+			&:after {
+				width: 550px;
+			}
+		}
+	}
+}
+
+// FOR REVIEWS PAGE
+.reviews-page {
+	.reviews-content {
+		.reviews-list {
+			li {
+				&:after {
+					width: 550px;
+				}
+			}
 		}
 	}
 }
