@@ -1,0 +1,130 @@
+.contact-page {
+	padding: 20px 0;
+	.contact-content {
+
+		.section-title {
+			@include section-title;
+		}
+
+		.contcts-list {
+			@include border-box;
+			position: relative;
+			overflow: hidden;
+
+			&:after {
+				position: absolute;
+				content: "";
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+				width: 268px;
+				height: 1px;
+				opacity: 0.8;
+				background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+			}
+
+			li {
+				display: block;
+				margin: 20px auto;
+
+				.fa {
+					font-size: 23px;
+				}
+
+				.title {
+					display: inline;
+					a {
+						color: black;
+						font: 600 22px / 25px $OpenSans;
+					}
+				}
+
+				.content {
+					a {
+						color: black;
+						font: 300 18px / 22px $OpenSans;
+					}
+				}
+			} 
+		}
+
+		.feedback-form {
+			@include border-box;
+			margin: 20px auto 0;
+			.form-title {
+				margin: 0 auto 30px;
+				text-align: center;
+				color: black;
+				font: 700 18px / 24px $OpenSans;
+				text-transform: uppercase;
+			}
+
+			#feedback-form {
+				overflow: hidden;
+				.row {
+					margin: 20px auto;
+					label {
+						display: block;
+						margin: 0 0 12px 10px;
+						color: black;
+						font: 400 18px / 22px $OpenSans;
+					}
+					#form-name,
+					#form-email,
+					#form-phone,
+					#form-message {
+						@include border-box;
+						width: 100%;
+						outline: none;
+						border: none;
+						border: 1px solid rgba(15, 16, 16, 0.36);
+					}
+					#form-name,
+					#form-email,
+					#form-phone {
+						height: 36px;
+					}
+
+					#form-message {
+						resize: none;
+						height: 138px;
+						padding: 12px 0 0 10px;
+						color: #000;
+						font: 400 18px / 20px $OpenSans;
+					}
+					::-webkit-input-placeholder {
+						color: #8f8f8f;
+						font: 400 18px / 20px $OpenSans;
+					}
+
+					:-moz-placeholder {
+						color: #8f8f8f;
+						font: 400 18px / 20px $OpenSans;
+					}
+
+					::-moz-placeholder {
+						color: #8f8f8f;
+						font: 400 18px / 20px $OpenSans;
+					}
+
+					:-ms-input-placeholder {
+						color: #8f8f8f;
+						font: 400 18px / 20px $OpenSans;
+					}
+				}
+				#feedback-sbm-btn {
+					display: block;
+					float: right;
+					width: 127px;
+					border: none;
+					height: 33px;
+					color: white;
+					font: 400 18px / 33px $OpenSans;
+					text-transform: uppercase;
+					background-color: #f39910;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

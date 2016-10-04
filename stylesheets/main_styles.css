@@ -1309,6 +1309,169 @@ footer .copyright .term-and-privacy a:hover {
   background: url("../images/next-btn.png") no-repeat;
 }
 
+/* line 1, ../sass/_contact.scss */
+.contact-page {
+  padding: 20px 0;
+}
+/* line 5, ../sass/_contact.scss */
+.contact-page .contact-content .section-title {
+  position: relative;
+  margin: 0 auto 17px;
+  padding: 0 0 16px 0;
+  text-align: center;
+  color: black;
+  font: 700 22px/26px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/* line 139, ../sass/main_styles.scss */
+.contact-page .contact-content .section-title:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 268px;
+  height: 1px;
+  opacity: 0.8;
+  background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+}
+/* line 9, ../sass/_contact.scss */
+.contact-page .contact-content .contcts-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+/* line 14, ../sass/_contact.scss */
+.contact-page .contact-content .contcts-list:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 268px;
+  height: 1px;
+  opacity: 0.8;
+  background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+}
+/* line 26, ../sass/_contact.scss */
+.contact-page .contact-content .contcts-list li {
+  display: block;
+  margin: 20px auto;
+}
+/* line 30, ../sass/_contact.scss */
+.contact-page .contact-content .contcts-list li .fa {
+  font-size: 23px;
+}
+/* line 34, ../sass/_contact.scss */
+.contact-page .contact-content .contcts-list li .title {
+  display: inline;
+}
+/* line 36, ../sass/_contact.scss */
+.contact-page .contact-content .contcts-list li .title a {
+  color: black;
+  font: 600 22px/25px "Open Sans", sans-serif;
+}
+/* line 43, ../sass/_contact.scss */
+.contact-page .contact-content .contcts-list li .content a {
+  color: black;
+  font: 300 18px/22px "Open Sans", sans-serif;
+}
+/* line 51, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 20px auto 0;
+}
+/* line 54, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form .form-title {
+  margin: 0 auto 30px;
+  text-align: center;
+  color: black;
+  font: 700 18px/24px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/* line 62, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form {
+  overflow: hidden;
+}
+/* line 64, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row {
+  margin: 20px auto;
+}
+/* line 66, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row label {
+  display: block;
+  margin: 0 0 12px 10px;
+  color: black;
+  font: 400 18px/22px "Open Sans", sans-serif;
+}
+/* line 72, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row #form-name,
+.contact-page .contact-content .feedback-form #feedback-form .row #form-email,
+.contact-page .contact-content .feedback-form #feedback-form .row #form-phone,
+.contact-page .contact-content .feedback-form #feedback-form .row #form-message {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+}
+/* line 82, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row #form-name,
+.contact-page .contact-content .feedback-form #feedback-form .row #form-email,
+.contact-page .contact-content .feedback-form #feedback-form .row #form-phone {
+  height: 36px;
+}
+/* line 88, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row #form-message {
+  resize: none;
+  height: 138px;
+  padding: 12px 0 0 10px;
+  color: #000;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 95, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row ::-webkit-input-placeholder {
+  color: #8f8f8f;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 100, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row :-moz-placeholder {
+  color: #8f8f8f;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 105, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row ::-moz-placeholder {
+  color: #8f8f8f;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 110, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form .row :-ms-input-placeholder {
+  color: #8f8f8f;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 115, ../sass/_contact.scss */
+.contact-page .contact-content .feedback-form #feedback-form #feedback-sbm-btn {
+  display: block;
+  float: right;
+  width: 127px;
+  border: none;
+  height: 33px;
+  color: white;
+  font: 400 18px/33px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #f39910;
+  cursor: pointer;
+}
+
 @media (min-width: 480px) {
   /* line 7, ../sass/_media.scss */
   .blog-more-page .blog-more-content .mobile-slider .swiper-container-mobile .swiper-slide img {
