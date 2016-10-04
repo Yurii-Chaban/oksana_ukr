@@ -1,0 +1,28 @@
+.services-page {
+
+	.services-content {
+		padding: 20px 0;
+		.section-title {
+			@include section-title;
+		}
+
+		.img-container {
+			max-width: 408px;
+			max-height: 278px;
+			overflow: hidden;
+			@include border-box;
+			margin: 20px auto;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		p {
+			margin: 10px auto;
+			color: black;
+			font: 300 18px / 22px $OpenSans;
+		}
+	}
+}
