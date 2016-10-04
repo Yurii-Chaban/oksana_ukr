@@ -157,6 +157,36 @@
 			}
 		}
 	}
+	// FOR BLOG PAGE
+	.blog-page {
+		.blog-content {
+			.blog-list {
+				li {
+					overflow: hidden;
+					clear: both;
+					.blog-img-container {
+						float: left;
+						margin: 0 15px 0 0;
+					}
+
+					.overflow-block {
+						overflow: hidden;
+					}
+
+					.post-title {
+						margin: 0 0 10px;
+					}
+					.post-content {
+						margin: 15px auto 0;
+						font-size: 16px;
+						span {
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -293,10 +323,12 @@
 
 .about-page,
 .services-page,
-.reviews-page {
+.reviews-page,
+.blog-page {
 	.about-content,
 	.services-content,
-	.reviews-content {
+	.reviews-content,
+	.blog-content {
 		.section-title {
 			&:after {
 				width: 550px;
