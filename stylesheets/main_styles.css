@@ -84,7 +84,7 @@ body {
   background: #fff;
 }
 
-/* line 129, ../sass/main_styles.scss */
+/* line 148, ../sass/main_styles.scss */
 .wrapper {
   max-width: 1010px;
   margin: 0 auto;
@@ -96,12 +96,12 @@ body {
   position: relative;
 }
 
-/* line 136, ../sass/main_styles.scss */
+/* line 155, ../sass/main_styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 139, ../sass/main_styles.scss */
+/* line 158, ../sass/main_styles.scss */
 .direction {
   position: relative;
   width: 100%;
@@ -110,22 +110,22 @@ a {
   background-size: contain;
   background-position: center;
   padding: 10px 0 11px;
-  background-color: #d5dde1;
+  background-color: #f19811;
 }
-/* line 77, ../sass/main_styles.scss */
+/* line 111, ../sass/main_styles.scss */
 .direction .arrow-back {
   float: left;
 }
-/* line 80, ../sass/main_styles.scss */
+/* line 114, ../sass/main_styles.scss */
 .direction .direction-title {
   margin: 0 auto;
   text-align: center;
 }
-/* line 83, ../sass/main_styles.scss */
+/* line 117, ../sass/main_styles.scss */
 .direction .direction-title a {
   color: #069df1;
-  font: 400 18px/25px #OpenSans;
-  text-transform: uppercase;
+  color: white;
+  font: 400 15px/25px "Open Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -355,6 +355,167 @@ header .lenguage-block {
   display: none;
 }
 
+/* line 1, ../sass/_footer.scss */
+footer {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  padding: 25px 0 23px;
+  background-color: #f39910;
+}
+/* line 7, ../sass/_footer.scss */
+footer .form-block .form-title {
+  margin: 0 auto 17px;
+  text-align: center;
+  color: #d72828;
+  font: 700 22px/26px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/* line 15, ../sass/_footer.scss */
+footer .form-block #contact-form {
+  overflow: hidden;
+}
+/* line 17, ../sass/_footer.scss */
+footer .form-block #contact-form #name,
+footer .form-block #contact-form #email,
+footer .form-block #contact-form #message-area {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 7px auto;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+  outline: none;
+  color: #000;
+  font: 400 18px/22px "Open Sans", sans-serif;
+}
+/* line 28, ../sass/_footer.scss */
+footer .form-block #contact-form #name,
+footer .form-block #contact-form #email {
+  height: 36px;
+  padding: 0 0 0 10px;
+}
+/* line 33, ../sass/_footer.scss */
+footer .form-block #contact-form #message-area {
+  height: 102px;
+  padding: 10px 0 0 10px;
+  resize: none;
+}
+/* line 38, ../sass/_footer.scss */
+footer .form-block #contact-form ::-webkit-input-placeholder {
+  color: #000;
+  font: 400 18px/22px "Open Sans", sans-serif;
+}
+/* line 43, ../sass/_footer.scss */
+footer .form-block #contact-form :-moz-placeholder {
+  color: #000;
+  font: 400 18px/22px "Open Sans", sans-serif;
+}
+/* line 48, ../sass/_footer.scss */
+footer .form-block #contact-form ::-moz-placeholder {
+  color: #000;
+  font: 400 18px/22px "Open Sans", sans-serif;
+}
+/* line 53, ../sass/_footer.scss */
+footer .form-block #contact-form :-ms-input-placeholder {
+  color: #000;
+  font: 400 18px/22px "Open Sans", sans-serif;
+}
+/* line 57, ../sass/_footer.scss */
+footer .form-block #contact-form #sbm-btn {
+  float: right;
+  display: block;
+  width: 127px;
+  height: 33px;
+  margin: 15px 0 0 0;
+  background-color: #d72828;
+  border: inherit;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font: 4040 18px/33px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/* line 75, ../sass/_footer.scss */
+footer .social-block {
+  clear: both;
+  overflow: hidden;
+  margin: 33px auto;
+}
+/* line 79, ../sass/_footer.scss */
+footer .social-block .social-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 83, ../sass/_footer.scss */
+footer .social-block .social-list li {
+  display: inline-block;
+  margin: 0 15px;
+  text-align: center;
+}
+/* line 88, ../sass/_footer.scss */
+footer .social-block .social-list li a span {
+  color: #000;
+  font-size: 38px;
+}
+/* line 97, ../sass/_footer.scss */
+footer .phone-block {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 100, ../sass/_footer.scss */
+footer .phone-block a {
+  color: #d72828;
+  font: 700 24px/28px "Open Sans", sans-serif;
+}
+/* line 106, ../sass/_footer.scss */
+footer .footer-menu {
+  display: none;
+}
+/* line 110, ../sass/_footer.scss */
+footer .copyright {
+  clear: both;
+  margin: 22px 0 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 2px solid #ffba62;
+}
+/* line 117, ../sass/_footer.scss */
+footer .copyright .copyright-sign {
+  margin: 15px auto 22px;
+  color: #000;
+  font: 400 14px/17px "Open Sans", sans-serif;
+}
+/* line 122, ../sass/_footer.scss */
+footer .copyright .copyright-sign a {
+  color: #000;
+}
+/* line 125, ../sass/_footer.scss */
+footer .copyright .copyright-sign a:hover {
+  text-decoration: underline;
+}
+/* line 131, ../sass/_footer.scss */
+footer .copyright .term-and-privacy a {
+  display: block;
+  color: #000;
+  font: 400 16px/30px "Open Sans", sans-serif;
+}
+/* line 136, ../sass/_footer.scss */
+footer .copyright .term-and-privacy a:hover {
+  text-decoration: underline;
+}
+
 /* line 1, ../sass/_main-page.scss */
 .page-slider {
   position: relative;
@@ -463,7 +624,7 @@ header .lenguage-block {
   font: 700 22px/26px "Open Sans", sans-serif;
   text-transform: uppercase;
 }
-/* line 116, ../sass/main_styles.scss */
+/* line 135, ../sass/main_styles.scss */
 .home-about .section-title:after {
   position: absolute;
   content: "";
@@ -506,7 +667,7 @@ header .lenguage-block {
   font: 700 22px/26px "Open Sans", sans-serif;
   text-transform: uppercase;
 }
-/* line 116, ../sass/main_styles.scss */
+/* line 135, ../sass/main_styles.scss */
 .girls-reviews .section-title:after {
   position: absolute;
   content: "";
@@ -642,173 +803,61 @@ header .lenguage-block {
   font: 600 24px/28px "Open Sans", sans-serif;
 }
 
-/* line 224, ../sass/_main-page.scss */
-footer {
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  margin: auto;
-  background-size: contain;
-  background-position: center;
-  padding: 25px 0 23px;
-  background-color: #f39910;
+/* line 3, ../sass/_about.scss */
+.about-page .about-content {
+  padding: 20px 0;
 }
-/* line 230, ../sass/_main-page.scss */
-footer .form-block .form-title {
+/* line 5, ../sass/_about.scss */
+.about-page .about-content .section-title {
+  position: relative;
   margin: 0 auto 17px;
+  padding: 0 0 16px 0;
   text-align: center;
-  color: #d72828;
+  color: black;
   font: 700 22px/26px "Open Sans", sans-serif;
   text-transform: uppercase;
 }
-/* line 238, ../sass/_main-page.scss */
-footer .form-block #contact-form {
+/* line 135, ../sass/main_styles.scss */
+.about-page .about-content .section-title:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 268px;
+  height: 1px;
+  opacity: 0.8;
+  background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+}
+/* line 9, ../sass/_about.scss */
+.about-page .about-content .img-container {
+  max-width: 408px;
+  max-height: 278px;
   overflow: hidden;
-}
-/* line 240, ../sass/_main-page.scss */
-footer .form-block #contact-form #name,
-footer .form-block #contact-form #email,
-footer .form-block #contact-form #message-area {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
-  margin: 7px auto;
-  border: 1px solid rgba(15, 16, 16, 0.36);
-  outline: none;
-  color: #000;
-  font: 400 18px/22px "Open Sans", sans-serif;
+  margin: 20px auto;
 }
-/* line 251, ../sass/_main-page.scss */
-footer .form-block #contact-form #name,
-footer .form-block #contact-form #email {
-  height: 36px;
-  padding: 0 0 0 10px;
+/* line 16, ../sass/_about.scss */
+.about-page .about-content .img-container img {
+  max-width: 100%;
+  height: auto;
 }
-/* line 256, ../sass/_main-page.scss */
-footer .form-block #contact-form #message-area {
-  height: 102px;
-  padding: 10px 0 0 10px;
-  resize: none;
-}
-/* line 261, ../sass/_main-page.scss */
-footer .form-block #contact-form ::-webkit-input-placeholder {
-  color: #000;
-  font: 400 18px/22px "Open Sans", sans-serif;
-}
-/* line 266, ../sass/_main-page.scss */
-footer .form-block #contact-form :-moz-placeholder {
-  color: #000;
-  font: 400 18px/22px "Open Sans", sans-serif;
-}
-/* line 271, ../sass/_main-page.scss */
-footer .form-block #contact-form ::-moz-placeholder {
-  color: #000;
-  font: 400 18px/22px "Open Sans", sans-serif;
-}
-/* line 276, ../sass/_main-page.scss */
-footer .form-block #contact-form :-ms-input-placeholder {
-  color: #000;
-  font: 400 18px/22px "Open Sans", sans-serif;
-}
-/* line 280, ../sass/_main-page.scss */
-footer .form-block #contact-form #sbm-btn {
-  float: right;
-  display: block;
-  width: 127px;
-  height: 33px;
-  margin: 15px 0 0 0;
-  background-color: #d72828;
-  border: inherit;
-  outline: none;
-  cursor: pointer;
-  color: white;
-  font: 4040 18px/33px "Open Sans", sans-serif;
-  text-transform: uppercase;
-}
-/* line 298, ../sass/_main-page.scss */
-footer .social-block {
-  clear: both;
-  overflow: hidden;
-  margin: 33px auto;
-}
-/* line 302, ../sass/_main-page.scss */
-footer .social-block .social-list {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 auto;
-  text-align: center;
-}
-/* line 306, ../sass/_main-page.scss */
-footer .social-block .social-list li {
-  display: inline-block;
-  margin: 0 15px;
-  text-align: center;
-}
-/* line 311, ../sass/_main-page.scss */
-footer .social-block .social-list li a span {
-  color: #000;
-  font-size: 38px;
-}
-/* line 320, ../sass/_main-page.scss */
-footer .phone-block {
-  margin: 0 auto;
-  text-align: center;
-}
-/* line 323, ../sass/_main-page.scss */
-footer .phone-block a {
-  color: #d72828;
-  font: 700 24px/28px "Open Sans", sans-serif;
-}
-/* line 329, ../sass/_main-page.scss */
-footer .footer-menu {
-  display: none;
-}
-/* line 333, ../sass/_main-page.scss */
-footer .copyright {
-  clear: both;
-  margin: 22px 0 0;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  border-top: 2px solid #ffba62;
-}
-/* line 340, ../sass/_main-page.scss */
-footer .copyright .copyright-sign {
-  margin: 15px auto 22px;
-  color: #000;
-  font: 400 14px/17px "Open Sans", sans-serif;
-}
-/* line 345, ../sass/_main-page.scss */
-footer .copyright .copyright-sign a {
-  color: #000;
-}
-/* line 348, ../sass/_main-page.scss */
-footer .copyright .copyright-sign a:hover {
-  text-decoration: underline;
-}
-/* line 354, ../sass/_main-page.scss */
-footer .copyright .term-and-privacy a {
-  display: block;
-  color: #000;
-  font: 400 16px/30px "Open Sans", sans-serif;
-}
-/* line 359, ../sass/_main-page.scss */
-footer .copyright .term-and-privacy a:hover {
-  text-decoration: underline;
+/* line 22, ../sass/_about.scss */
+.about-page .about-content p {
+  margin: 10px auto;
+  color: black;
+  font: 300 18px/22px "Open Sans", sans-serif;
 }
 
 @media (min-width: 768px) {
-  /* line 3, ../sass/_media.scss */
+  /* line 5, ../sass/_media.scss */
   .page-slider .swiper-container-home-page {
     height: 485px;
   }
-  /* line 7, ../sass/_media.scss */
+  /* line 9, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title {
     width: auto;
     text-align: left;
@@ -816,18 +865,18 @@ footer .copyright .term-and-privacy a:hover {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* line 13, ../sass/_media.scss */
+  /* line 15, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title a {
     font-size: 35px;
     line-height: 40px;
   }
-  /* line 20, ../sass/_media.scss */
+  /* line 22, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-pagination-bullets {
     display: block;
     bottom: 20px;
     right: 10px;
   }
-  /* line 25, ../sass/_media.scss */
+  /* line 27, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-pagination-bullets .swiper-pagination-bullet {
     width: 17px;
     height: 17px;
@@ -836,23 +885,25 @@ footer .copyright .term-and-privacy a:hover {
     border: 2px solid #fca013;
     opacity: 1;
   }
-  /* line 33, ../sass/_media.scss */
+  /* line 35, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-pagination-bullets .swiper-pagination-bullet-active {
     background-color: #000;
     border-color: #000;
   }
 
-  /* line 43, ../sass/_media.scss */
+  /* line 45, ../sass/_media.scss */
   .home-about .section-title:after {
     width: 550px;
   }
 
-  /* line 51, ../sass/_media.scss */
+  /* line 53, ../sass/_media.scss */
   .girls-reviews .section-title:after {
     width: 550px;
   }
-  /* line 55, ../sass/_media.scss */
+  /* line 57, ../sass/_media.scss */
   .girls-reviews .girls-reviews-list {
+    margin: 40px auto;
+    padding: 0 0 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-flex-wrap: wrap;
@@ -863,20 +914,20 @@ footer .copyright .term-and-privacy a:hover {
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
-  /* line 66, ../sass/_media.scss */
+  /* line 71, ../sass/_media.scss */
   .girls-reviews .girls-reviews-list li {
     margin: 0 auto;
   }
-  /* line 70, ../sass/_media.scss */
+  /* line 75, ../sass/_media.scss */
   .girls-reviews .girls-reviews-list:after {
     width: 550px;
   }
 
-  /* line 76, ../sass/_media.scss */
+  /* line 81, ../sass/_media.scss */
   .fill-section {
     padding: 0 0 42px 0;
   }
-  /* line 78, ../sass/_media.scss */
+  /* line 83, ../sass/_media.scss */
   .fill-section .section-img-wrapper {
     height: 410px;
     max-width: 972px;
@@ -884,54 +935,69 @@ footer .copyright .term-and-privacy a:hover {
     margin: 0 auto;
     text-align: center;
   }
-  /* line 85, ../sass/_media.scss */
+  /* line 90, ../sass/_media.scss */
   .fill-section .section-img-wrapper #border-block {
     width: 300px;
     bottom: 120px;
     border-bottom: 120px solid rgba(246, 154, 16, 0.6);
   }
-  /* line 90, ../sass/_media.scss */
+  /* line 95, ../sass/_media.scss */
   .fill-section .section-img-wrapper #border-block a {
     font-size: 32px;
     line-height: 38px;
   }
+
+  /* line 106, ../sass/_media.scss */
+  .about-page .about-content .section-title {
+    margin: 0 auto 30px;
+  }
+  /* line 110, ../sass/_media.scss */
+  .about-page .about-content .img-container {
+    float: left;
+    margin: 0 15px 15px 0;
+  }
 }
 @media (min-width: 1024px) {
-  /* line 102, ../sass/_media.scss */
+  /* line 120, ../sass/_media.scss */
+  .direction {
+    display: none;
+  }
+
+  /* line 124, ../sass/_media.scss */
   header {
     overflow: hidden;
     max-height: 113px;
     padding: 11px 0 0;
   }
-  /* line 106, ../sass/_media.scss */
+  /* line 128, ../sass/_media.scss */
   header .dropdovn-menu-mobile,
   header .call-us-block {
     display: none;
   }
-  /* line 111, ../sass/_media.scss */
+  /* line 133, ../sass/_media.scss */
   header .block-logo {
     float: left;
   }
-  /* line 114, ../sass/_media.scss */
+  /* line 136, ../sass/_media.scss */
   header .block-logo .logo {
     max-width: 200px;
     max-height: 100%;
     padding: 5px;
   }
-  /* line 121, ../sass/_media.scss */
+  /* line 143, ../sass/_media.scss */
   header .lenguage-block {
     display: block;
     float: right;
     margin: 10px 0 0;
   }
-  /* line 126, ../sass/_media.scss */
+  /* line 148, ../sass/_media.scss */
   header .lenguage-block #lenguage-list {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 129, ../sass/_media.scss */
+  /* line 151, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li {
     display: block;
     width: 56px;
@@ -939,7 +1005,7 @@ footer .copyright .term-and-privacy a:hover {
     float: left;
     text-align: center;
   }
-  /* line 136, ../sass/_media.scss */
+  /* line 158, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li a {
     display: block;
     width: 100%;
@@ -953,17 +1019,17 @@ footer .copyright .term-and-privacy a:hover {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
-  /* line 146, ../sass/_media.scss */
+  /* line 168, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li a:hover {
     color: #d72828;
     border-color: #d72828;
   }
-  /* line 151, ../sass/_media.scss */
+  /* line 173, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li a.lenguage-item-active {
     color: #d72828;
     border-color: #d72828;
   }
-  /* line 159, ../sass/_media.scss */
+  /* line 181, ../sass/_media.scss */
   header .main-menu {
     display: block;
     height: 43px;
@@ -972,14 +1038,14 @@ footer .copyright .term-and-privacy a:hover {
     overflow: hidden;
     background-image: linear-gradient(to top, white 0%, #ffba62 0%, #ef9710 0%, #fda115 100%);
   }
-  /* line 167, ../sass/_media.scss */
+  /* line 189, ../sass/_media.scss */
   header .main-menu .list-menu {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 170, ../sass/_media.scss */
+  /* line 192, ../sass/_media.scss */
   header .main-menu .list-menu li {
     display: block;
     float: left;
@@ -987,15 +1053,15 @@ footer .copyright .term-and-privacy a:hover {
     padding: 0 25px 0 0;
     border-right: 1px solid #f0e9e0;
   }
-  /* line 177, ../sass/_media.scss */
+  /* line 199, ../sass/_media.scss */
   header .main-menu .list-menu li:first-child {
     margin-left: 0;
   }
-  /* line 181, ../sass/_media.scss */
+  /* line 203, ../sass/_media.scss */
   header .main-menu .list-menu li:last-child {
     border: none;
   }
-  /* line 185, ../sass/_media.scss */
+  /* line 207, ../sass/_media.scss */
   header .main-menu .list-menu li a {
     display: block;
     width: 100%;
@@ -1003,53 +1069,53 @@ footer .copyright .term-and-privacy a:hover {
     color: black;
     font: 400 16px/43px "Open Sans", sans-serif;
   }
-  /* line 192, ../sass/_media.scss */
+  /* line 214, ../sass/_media.scss */
   header .main-menu .list-menu li a:hover {
     text-decoration: underline;
   }
-  /* line 196, ../sass/_media.scss */
+  /* line 218, ../sass/_media.scss */
   header .main-menu .list-menu li a.desctop-menu-active {
     text-decoration: underline;
   }
 
-  /* line 209, ../sass/_media.scss */
+  /* line 231, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .opacity-block {
     opacity: 0.90;
   }
-  /* line 212, ../sass/_media.scss */
+  /* line 234, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title {
     left: 25%;
     transform: translateX(-25%);
   }
 
-  /* line 221, ../sass/_media.scss */
+  /* line 243, ../sass/_media.scss */
   .home-about .home-about-description .visible-description {
     display: inline;
   }
 
-  /* line 228, ../sass/_media.scss */
+  /* line 252, ../sass/_media.scss */
   footer .footer-content {
     overflow: hidden;
   }
-  /* line 231, ../sass/_media.scss */
+  /* line 255, ../sass/_media.scss */
   footer .form-block {
-    max-width: 385px;
+    max-width: 390px;
     float: right;
   }
-  /* line 236, ../sass/_media.scss */
+  /* line 260, ../sass/_media.scss */
   footer .form-block #contact-form #name,
   footer .form-block #contact-form #email {
     width: 48%;
   }
-  /* line 241, ../sass/_media.scss */
+  /* line 265, ../sass/_media.scss */
   footer .form-block #contact-form #name {
     float: left;
   }
-  /* line 244, ../sass/_media.scss */
+  /* line 268, ../sass/_media.scss */
   footer .form-block #contact-form #email {
     float: right;
   }
-  /* line 250, ../sass/_media.scss */
+  /* line 274, ../sass/_media.scss */
   footer .social-block {
     float: right;
     clear: inherit;
@@ -1057,7 +1123,7 @@ footer .copyright .term-and-privacy a:hover {
     min-width: 150px;
     overflow: hidden;
   }
-  /* line 257, ../sass/_media.scss */
+  /* line 281, ../sass/_media.scss */
   footer .social-block .social-list {
     float: left;
     -webkit-box-sizing: border-box;
@@ -1065,34 +1131,34 @@ footer .copyright .term-and-privacy a:hover {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 260, ../sass/_media.scss */
+  /* line 284, ../sass/_media.scss */
   footer .social-block .social-list li {
     display: block;
     margin: 15px auto;
   }
-  /* line 265, ../sass/_media.scss */
+  /* line 289, ../sass/_media.scss */
   footer .social-block .social-list li a span {
     font-size: 20px;
   }
-  /* line 272, ../sass/_media.scss */
+  /* line 296, ../sass/_media.scss */
   footer .phone-block {
     display: none;
   }
-  /* line 276, ../sass/_media.scss */
+  /* line 300, ../sass/_media.scss */
   footer .footer-menu {
     display: block;
     float: left;
     max-width: 385px;
     overflow: hidden;
   }
-  /* line 282, ../sass/_media.scss */
+  /* line 306, ../sass/_media.scss */
   footer .footer-menu .menu-list {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 284, ../sass/_media.scss */
+  /* line 308, ../sass/_media.scss */
   footer .footer-menu .menu-list li {
     text-align: left;
     display: block;
@@ -1100,20 +1166,20 @@ footer .copyright .term-and-privacy a:hover {
     width: 49%;
     margin: 5px 0;
   }
-  /* line 290, ../sass/_media.scss */
+  /* line 314, ../sass/_media.scss */
   footer .footer-menu .menu-list li a {
     color: black;
     font: 400 15px/20px "Open Sans", sans-serif;
   }
-  /* line 294, ../sass/_media.scss */
+  /* line 318, ../sass/_media.scss */
   footer .footer-menu .menu-list li a:hover {
     text-decoration: underline;
   }
-  /* line 298, ../sass/_media.scss */
+  /* line 322, ../sass/_media.scss */
   footer .footer-menu .menu-list li a.footer-menu-active {
     text-decoration: underline;
   }
-  /* line 306, ../sass/_media.scss */
+  /* line 330, ../sass/_media.scss */
   footer .copyright .term-and-privacy a {
     display: inline-block;
     margin: 0 10px;

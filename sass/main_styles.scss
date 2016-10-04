@@ -104,6 +104,25 @@ $MonotypeCorsiva: 'MonotypeCorsiva', sans-serif;
 	}
 }
 
+@mixin direction {
+	@include site-container;
+	padding: 10px 0 11px;
+	background-color: #f19811;
+	.arrow-back {
+		float: left;
+	}
+	.direction-title {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: #069df1;
+			color: white;
+			font: 400 15px / 25px $OpenSans;
+			text-transform: uppercase;
+		}
+	}
+}
+
 @mixin section-title {
 	position: relative;
 	margin: 0 auto 17px;
@@ -142,5 +161,7 @@ a {
 
 // include header
 @import "header.scss";
+@import "footer.scss";
 @import "main-page.scss";
+@import "about.scss";
 @import "media.scss";

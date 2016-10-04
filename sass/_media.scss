@@ -1,4 +1,6 @@
 @media (min-width: 768px) {
+
+	// FOR HOME PAGE
 	.page-slider {
 		.swiper-container-home-page {
 			height: 485px;
@@ -53,6 +55,9 @@
 			}
 		}
 		.girls-reviews-list {
+			margin: 40px auto;
+			padding: 0 0 50px;
+
 			display: -webkit-box;
 			display: -ms-flexbox;
 			-webkit-flex-wrap: wrap;
@@ -94,10 +99,27 @@
 			}
 		}
 	}
+	// FOR ABOUT US PAGE
+	.about-page {
+		.about-content {
+			
+			.section-title {
+				margin: 0 auto 30px;
+			}
+
+			.img-container {
+				float: left;
+				margin: 0 15px 15px 0;
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
 
+	.direction {
+		display: none;
+	}
 
 	header {
 		overflow: hidden;
@@ -170,17 +192,17 @@
 				li {
 					display: block;
 					float: left;
-			    margin: 0 15px;
-			    padding: 0 25px 0 0;
-			    border-right: 1px solid #f0e9e0;
+					margin: 0 15px;
+					padding: 0 25px 0 0;
+					border-right: 1px solid #f0e9e0;
 
-			    &:first-child {
-			    	margin-left: 0;
-			    }
+					&:first-child {
+						margin-left: 0;
+					}
 
-			    &:last-child {
-			    	border: none;
-			    }
+					&:last-child {
+						border: none;
+					}
 
 					a {
 						display: block;
@@ -202,34 +224,36 @@
 
 	}
 
+// FOR HOME PAGE
+.page-slider {
+	.swiper-container-home-page {
+		.swiper-slide {
+			.opacity-block {
+				opacity: 0.90;
+			}
+			.slider-title {
+				left: 25%;
+				transform: translateX(-25%);
+			}
+		}
+	}
+}
+.home-about {
+	.home-about-description {
+		.visible-description {
+			display: inline;
+		}
+	}
+}
 
-	.page-slider {
-		.swiper-container-home-page {
-			.swiper-slide {
-				.opacity-block {
-					opacity: 0.90;
-				}
-				.slider-title {
-					left: 25%;
-					transform: translateX(-25%);
-				}
-			}
-		}
-	}
-	.home-about {
-		.home-about-description {
-			.visible-description {
-				display: inline;
-			}
-		}
-	}
+	// FOOTER
 
 	footer {
 		.footer-content {
 			overflow: hidden;
 		}
 		.form-block {
-			max-width: 385px;
+			max-width: 390px;
 			float: right;
 
 			#contact-form {

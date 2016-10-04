@@ -1,0 +1,142 @@
+footer {
+	@include site-container;
+	padding: 25px 0 23px;
+	background-color: #f39910;
+
+	.form-block {
+		.form-title {
+			margin: 0 auto 17px;
+			text-align: center;
+			color: #d72828;
+			font: 700 22px / 26px $OpenSans;
+			text-transform: uppercase;
+		}
+
+		#contact-form {
+			overflow: hidden;
+			#name,
+			#email,
+			#message-area {
+				@include border-box;
+				width: 100%;
+				margin: 7px auto;
+				border: 1px solid rgba(15, 16, 16, 0.36);
+				outline: none;
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+			#name,
+			#email {
+				height: 36px;
+				padding: 0 0 0 10px;
+			}
+			#message-area {
+				height: 102px;
+				padding: 10px 0 0 10px;
+				resize: none;
+			}
+			::-webkit-input-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			:-moz-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			::-moz-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			:-ms-input-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+			#sbm-btn {
+				float: right;
+				display: block;
+				width: 127px;
+				height: 33px;
+				margin: 15px 0 0 0;
+				background-color: #d72828;
+				border: inherit;
+				outline: none;
+				cursor: pointer;
+				
+				color: white;
+				font: 4040 18px / 33px $OpenSans;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.social-block {
+		clear: both;
+		overflow: hidden;
+		margin: 33px auto;
+		.social-list {
+			@include border-box;
+			margin: 0 auto;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				text-align: center;
+				a {
+					span {
+						color: #000;
+						font-size: 38px;
+					}
+				}
+			}
+		}
+	}
+
+	.phone-block {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: #d72828;
+			font: 700 24px / 28px $OpenSans;
+		}
+	}
+
+	.footer-menu {
+		display: none;
+	}
+
+	.copyright {
+		clear: both;
+		margin: 22px 0 0;
+		text-align: center;
+		@include border-box;
+		border-top: 2px solid #ffba62;
+
+		.copyright-sign {
+			margin: 15px auto 22px;
+			color: #000;
+			font: 400 14px / 17px $OpenSans;
+
+			a {
+				color: #000;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.term-and-privacy {
+			a {
+				display: block;
+				color: #000;
+				font: 400 16px / 30px $OpenSans;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
