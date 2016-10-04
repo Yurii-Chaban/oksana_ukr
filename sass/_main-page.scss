@@ -1,0 +1,365 @@
+.page-slider {
+	@include site-container;
+
+	border-bottom: 5px solid #ffa429;
+
+	.swiper-container-home-page {
+		position: relative;
+		height: 236px;
+
+		.swiper-slide {
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+
+			.opacity-block {
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 0.40;
+				background-image: linear-gradient(85deg, white 0%, transparent 100%);
+			}
+
+			.slider-title {
+				width: 257px;
+				text-align: left;
+				position: absolute;
+				z-index: 3;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				a {
+					color: black;
+					font: 600 22px / 30px $OpenSans;
+					text-transform: uppercase;
+					span {
+						display: block;
+					}
+				}
+			}
+
+			img {
+				z-index: 1;
+				min-height: auto;
+				height: 100%;
+				min-width: auto;
+				max-width: none;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+			}
+		}
+		.swiper-pagination-bullets {
+			display: none;
+		}
+	}
+}
+.home-about {
+	@include site-container;
+	padding: 20px 0;
+	background-color: #f2ece5;
+
+	.section-title {
+		@include section-title;
+	}
+	.home-about-description {
+		color: black;
+		font: 300 22px / 26px $OpenSans;
+
+		.visible-description {
+			display: none;
+		}
+	}
+}
+.girls-reviews {
+	@include site-container;
+	padding: 20px 0;
+	background-color: #fff;
+
+	.section-title {
+		@include section-title;
+	}
+
+	.girls-reviews-list {
+		position: relative;
+		@include border-box;
+		margin: 20px auto;
+		padding: 0 0 30px;
+		text-align: center;
+
+		&:after {
+			position: absolute;
+			content: "";
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+			width: 268px;
+			height: 1px;
+			opacity: 0.8;
+			background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+		}
+
+		li {
+			display: block;
+			margin: 0 auto 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.img-wrapper {
+				width: 153px;
+				height: 153px;
+				margin: 0 auto 12px;
+				border-radius: 100%;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+
+					// max-width: 100%;
+					// height: auto;
+				}
+			}
+
+			.girl-name {
+				color: black;
+				font: 600 22px / 26px $OpenSans;
+			}
+		}
+	}
+}
+.fill-section {
+	@include site-container;
+	padding: 0;
+	position: relative;
+
+	.section-img-wrapper {
+		position: relative;
+		width: 100%;
+		min-height: 100%;
+		height: 242px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+
+		overflow: hidden;
+
+		img {
+			z-index: 1;
+			min-height: auto;
+			height: auto;
+			min-width: auto;
+			max-width: none;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		#border-block {
+			position: absolute;
+			border-bottom: 88px solid rgba(246, 154, 16, 0.6);
+			border-left: 50px solid transparent;
+			border-right: 0 solid transparent;
+			width: 170px;
+			height: 0;
+			z-index: 2;
+			bottom: 31px;
+    	right: 0;
+
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				margin: 15px auto 0;
+				text-align: center;
+				color: #fefefe;
+				font: 600 24px / 28px $OpenSans;
+			}
+		}
+	}
+}
+footer {
+	@include site-container;
+	padding: 25px 0 23px;
+	background-color: #f39910;
+
+	.form-block {
+		.form-title {
+			margin: 0 auto 17px;
+			text-align: center;
+			color: #d72828;
+			font: 700 22px / 26px $OpenSans;
+			text-transform: uppercase;
+		}
+
+		#contact-form {
+			overflow: hidden;
+			#name,
+			#email,
+			#message-area {
+				@include border-box;
+				width: 100%;
+				margin: 7px auto;
+				border: 1px solid rgba(15, 16, 16, 0.36);
+				outline: none;
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+			#name,
+			#email {
+				height: 36px;
+				padding: 0 0 0 10px;
+			}
+			#message-area {
+				height: 102px;
+				padding: 10px 0 0 10px;
+				resize: none;
+			}
+			::-webkit-input-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			:-moz-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			::-moz-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			:-ms-input-placeholder {
+				color: #000;
+				font: 400 18px / 22px $OpenSans;
+			}
+			#sbm-btn {
+				float: right;
+				display: block;
+				width: 127px;
+				height: 33px;
+				margin: 15px 0 0 0;
+				background-color: #d72828;
+				border: inherit;
+				outline: none;
+				cursor: pointer;
+				
+				color: white;
+				font: 4040 18px / 33px $OpenSans;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.social-block {
+		clear: both;
+		overflow: hidden;
+		margin: 33px auto;
+		.social-list {
+			@include border-box;
+			margin: 0 auto;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				text-align: center;
+				a {
+					span {
+						color: #000;
+						font-size: 38px;
+					}
+				}
+			}
+		}
+	}
+
+	.phone-block {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: #d72828;
+			font: 700 24px / 28px $OpenSans;
+		}
+	}
+
+	.footer-menu {
+		display: none;
+	}
+
+	.copyright {
+    clear: both;
+		margin: 22px 0 0;
+		text-align: center;
+		@include border-box;
+		border-top: 2px solid #ffba62;
+
+		.copyright-sign {
+			margin: 15px auto 22px;
+			color: #000;
+			font: 400 14px / 17px $OpenSans;
+
+			a {
+				color: #000;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.term-and-privacy {
+			a {
+				display: block;
+				color: #000;
+				font: 400 16px / 30px $OpenSans;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

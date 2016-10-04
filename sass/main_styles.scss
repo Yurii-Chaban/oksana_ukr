@@ -2,21 +2,21 @@
 @import "compass/reset";
 
 @font-face {
-  font-family: 'MonotypeCorsiva';
-  src: url('../resources/MonotypeCorsiva/MonotypeCorsiva.woff') format('woff'),
-       url('../resources/MonotypeCorsiva/MonotypeCorsiva.ttf') format('truetype'),
-       url('../resources/MonotypeCorsiva/MonotypeCorsiva.svg#MonotypeCorsiva') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'MonotypeCorsiva';
+	src: url('../resources/MonotypeCorsiva/MonotypeCorsiva.woff') format('woff'),
+	url('../resources/MonotypeCorsiva/MonotypeCorsiva.ttf') format('truetype'),
+	url('../resources/MonotypeCorsiva/MonotypeCorsiva.svg#MonotypeCorsiva') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'MonotypeCorsiva';
-  src: url('../resources/MonotypeCorsiva/mtcorsva.eot');
-  src: url('../resources/MonotypeCorsiva/mtcorsva.woff2') format('woff2'),
-       url('../resources/MonotypeCorsiva/mtcorsva.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'MonotypeCorsiva';
+	src: url('../resources/MonotypeCorsiva/mtcorsva.eot');
+	src: url('../resources/MonotypeCorsiva/mtcorsva.woff2') format('woff2'),
+	url('../resources/MonotypeCorsiva/mtcorsva.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -104,6 +104,28 @@ $MonotypeCorsiva: 'MonotypeCorsiva', sans-serif;
 	}
 }
 
+@mixin section-title {
+	position: relative;
+	margin: 0 auto 17px;
+	padding: 0 0 16px 0;
+	text-align: center;
+	color: black;
+	font: 700 22px / 26px $OpenSans;
+	text-transform: uppercase;
+
+	&:after {
+		position: absolute;
+		content: "";
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		width: 268px;
+		height: 1px;
+		opacity: 0.8;
+		background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+	}
+}
+
 .wrapper {
 	max-width: 1010px;
 	margin: 0 auto;
@@ -120,3 +142,5 @@ a {
 
 // include header
 @import "header.scss";
+@import "main-page.scss";
+@import "media.scss";
