@@ -1,3 +1,19 @@
+@media (min-width: 480px) {
+	.blog-more-page {
+		.blog-more-content {
+			.mobile-slider {
+				.swiper-container-mobile {
+					.swiper-slide {
+						img {
+							max-width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 
 	// FOR HOME PAGE
@@ -324,11 +340,13 @@
 .about-page,
 .services-page,
 .reviews-page,
-.blog-page {
+.blog-page,
+.blog-more-page {
 	.about-content,
 	.services-content,
 	.reviews-content,
-	.blog-content {
+	.blog-content,
+	.blog-more-content {
 		.section-title {
 			&:after {
 				width: 550px;
@@ -349,6 +367,89 @@
 		}
 	}
 }
+
+// FOR BLOG MORE PAGE 
+.blog-more-page {
+	.blog-more-content {
+
+		.section-title {
+			display: none;
+		}
+
+		.blog-more-img-container-more {
+			float: left;
+			margin: 0 20px 10px 0;
+		}
+
+		.post-title-more {
+			margin: 0 auto 12px;
+		}
+
+		.post-content-more {
+			margin: 15px auto 0;
+
+			&:last-of-type {
+				margin-bottom: 30px;
+			}
+			span {
+				display: inline;
+			}
+		}
+
+		.mobile-slider {
+			display: none;
+		}
+		.desctop-slider {
+			display: block;
+			.swiper-container-desctop {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+
+				.swiper-slide {
+					text-align: center;
+					font-size: 18px;
+					background: #fff;
+					/* Center slide text vertically */
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: -webkit-flex;
+					display: flex;
+					-webkit-box-pack: center;
+					-ms-flex-pack: center;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					-webkit-align-items: center;
+					align-items: center;
+
+						img {
+							max-width: 90%;
+						}
+					}
+
+					.swiper-button-next, .swiper-button-prev {
+						width: 20px;
+						height: 30px;
+					}
+
+					.swiper-button-prev {
+						background-image: none;
+						background: url('../images/prev-btn.png') no-repeat;
+					}
+					.swiper-button-next {
+						background-image: none;
+						background: url('../images/next-btn.png') no-repeat;
+					}
+				}
+			}
+			.videoWrapper {
+				padding-bottom: 47.25%;
+			}
+		}
+	}
 
 	// FOOTER
 

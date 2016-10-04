@@ -74,3 +74,31 @@ var swiper_main = new Swiper('.swiper-container-home-page', {
     watchSlidesProgress: true,
     autoplayDisableOnInteraction: false
 });
+// mobile blog more slider
+var swiper = new Swiper('.swiper-container-mobile', {
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 1,
+    paginationClickable: true,
+    simulateTouch: true,
+    centeredSlides: true,
+    autoplay: 3500,
+    speed: 1000,
+    spaceBetween: 0
+});
+// desctop blog more slider
+var swiper = new Swiper('.swiper-container-desctop', {
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 3,
+    paginationClickable: true,
+    simulateTouch: true,
+    centeredSlides: true,
+    autoplay: 3500,
+    speed: 1000,
+    spaceBetween: 0
+});
