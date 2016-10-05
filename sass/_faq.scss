@@ -1,0 +1,11 @@
+.faq-page {
+	padding: 20px 0 40px;
+	.faq-content {
+		overflow: hidden;
+
+		.section-title {
+			@include section-title;
+		}
+
+	}
+}

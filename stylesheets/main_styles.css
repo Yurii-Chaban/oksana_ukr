@@ -1480,6 +1480,37 @@ footer .copyright .term-and-privacy a:hover {
   cursor: pointer;
 }
 
+/* line 1, ../sass/_faq.scss */
+.faq-page {
+  padding: 20px 0 40px;
+}
+/* line 3, ../sass/_faq.scss */
+.faq-page .faq-content {
+  overflow: hidden;
+}
+/* line 6, ../sass/_faq.scss */
+.faq-page .faq-content .section-title {
+  position: relative;
+  margin: 0 auto 17px;
+  padding: 0 0 16px 0;
+  text-align: center;
+  color: black;
+  font: 700 22px/26px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/* line 139, ../sass/main_styles.scss */
+.faq-page .faq-content .section-title:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 268px;
+  height: 1px;
+  opacity: 0.8;
+  background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+}
+
 @media (min-width: 480px) {
   /* line 7, ../sass/_media.scss */
   .blog-more-page .blog-more-content .mobile-slider .swiper-container-mobile .swiper-slide img {
@@ -1832,92 +1863,105 @@ footer .copyright .term-and-privacy a:hover {
     display: inline;
   }
 
-  /* line 396, ../sass/_media.scss */
+  /* line 398, ../sass/_media.scss */
   .about-page .about-content .section-title:after,
   .about-page .services-content .section-title:after,
   .about-page .reviews-content .section-title:after,
   .about-page .blog-content .section-title:after,
   .about-page .blog-more-content .section-title:after,
   .about-page .contact-content .section-title:after,
+  .about-page .faq-content .section-title:after,
   .services-page .about-content .section-title:after,
   .services-page .services-content .section-title:after,
   .services-page .reviews-content .section-title:after,
   .services-page .blog-content .section-title:after,
   .services-page .blog-more-content .section-title:after,
   .services-page .contact-content .section-title:after,
+  .services-page .faq-content .section-title:after,
   .reviews-page .about-content .section-title:after,
   .reviews-page .services-content .section-title:after,
   .reviews-page .reviews-content .section-title:after,
   .reviews-page .blog-content .section-title:after,
   .reviews-page .blog-more-content .section-title:after,
   .reviews-page .contact-content .section-title:after,
+  .reviews-page .faq-content .section-title:after,
   .blog-page .about-content .section-title:after,
   .blog-page .services-content .section-title:after,
   .blog-page .reviews-content .section-title:after,
   .blog-page .blog-content .section-title:after,
   .blog-page .blog-more-content .section-title:after,
   .blog-page .contact-content .section-title:after,
+  .blog-page .faq-content .section-title:after,
   .blog-more-page .about-content .section-title:after,
   .blog-more-page .services-content .section-title:after,
   .blog-more-page .reviews-content .section-title:after,
   .blog-more-page .blog-content .section-title:after,
   .blog-more-page .blog-more-content .section-title:after,
   .blog-more-page .contact-content .section-title:after,
+  .blog-more-page .faq-content .section-title:after,
   .contact-page .about-content .section-title:after,
   .contact-page .services-content .section-title:after,
   .contact-page .reviews-content .section-title:after,
   .contact-page .blog-content .section-title:after,
   .contact-page .blog-more-content .section-title:after,
-  .contact-page .contact-content .section-title:after {
+  .contact-page .contact-content .section-title:after,
+  .contact-page .faq-content .section-title:after,
+  .faq-page .about-content .section-title:after,
+  .faq-page .services-content .section-title:after,
+  .faq-page .reviews-content .section-title:after,
+  .faq-page .blog-content .section-title:after,
+  .faq-page .blog-more-content .section-title:after,
+  .faq-page .contact-content .section-title:after,
+  .faq-page .faq-content .section-title:after {
     width: 550px;
   }
 
-  /* line 408, ../sass/_media.scss */
+  /* line 410, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li:after {
     width: 550px;
   }
 
-  /* line 420, ../sass/_media.scss */
+  /* line 422, ../sass/_media.scss */
   .blog-more-page .blog-more-content .section-title {
     display: none;
   }
-  /* line 424, ../sass/_media.scss */
+  /* line 426, ../sass/_media.scss */
   .blog-more-page .blog-more-content .blog-more-img-container-more {
     float: left;
     margin: 0 20px 10px 0;
   }
-  /* line 429, ../sass/_media.scss */
+  /* line 431, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-title-more {
     margin: 0 auto 12px;
   }
-  /* line 433, ../sass/_media.scss */
+  /* line 435, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-content-more {
     margin: 15px auto 0;
   }
-  /* line 436, ../sass/_media.scss */
+  /* line 438, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-content-more:last-of-type {
     margin-bottom: 30px;
   }
-  /* line 439, ../sass/_media.scss */
+  /* line 441, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-content-more span {
     display: inline;
   }
-  /* line 444, ../sass/_media.scss */
+  /* line 446, ../sass/_media.scss */
   .blog-more-page .blog-more-content .mobile-slider {
     display: none;
   }
-  /* line 447, ../sass/_media.scss */
+  /* line 449, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider {
     display: block;
   }
-  /* line 449, ../sass/_media.scss */
+  /* line 451, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
   }
-  /* line 455, ../sass/_media.scss */
+  /* line 457, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -1936,58 +1980,58 @@ footer .copyright .term-and-privacy a:hover {
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 473, ../sass/_media.scss */
+  /* line 475, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-slide img {
     max-width: 90%;
   }
-  /* line 478, ../sass/_media.scss */
+  /* line 480, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-next, .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-prev {
     width: 20px;
     height: 30px;
   }
-  /* line 483, ../sass/_media.scss */
+  /* line 485, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-prev {
     background-image: none;
     background: url("../images/prev-btn.png") no-repeat;
   }
-  /* line 487, ../sass/_media.scss */
+  /* line 489, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-next {
     background-image: none;
     background: url("../images/next-btn.png") no-repeat;
   }
-  /* line 493, ../sass/_media.scss */
+  /* line 495, ../sass/_media.scss */
   .blog-more-page .blog-more-content .videoWrapper {
     padding-bottom: 47.25%;
   }
 
-  /* line 503, ../sass/_media.scss */
+  /* line 505, ../sass/_media.scss */
   .contact-page .contact-content .contacts-list:after {
     width: 550px;
   }
 
-  /* line 512, ../sass/_media.scss */
+  /* line 514, ../sass/_media.scss */
   footer .footer-content {
     overflow: hidden;
   }
-  /* line 515, ../sass/_media.scss */
+  /* line 517, ../sass/_media.scss */
   footer .form-block {
     max-width: 390px;
     float: right;
   }
-  /* line 520, ../sass/_media.scss */
+  /* line 522, ../sass/_media.scss */
   footer .form-block #contact-form #name,
   footer .form-block #contact-form #email {
     width: 48%;
   }
-  /* line 525, ../sass/_media.scss */
+  /* line 527, ../sass/_media.scss */
   footer .form-block #contact-form #name {
     float: left;
   }
-  /* line 528, ../sass/_media.scss */
+  /* line 530, ../sass/_media.scss */
   footer .form-block #contact-form #email {
     float: right;
   }
-  /* line 534, ../sass/_media.scss */
+  /* line 536, ../sass/_media.scss */
   footer .social-block {
     float: right;
     clear: inherit;
@@ -1995,7 +2039,7 @@ footer .copyright .term-and-privacy a:hover {
     min-width: 150px;
     overflow: hidden;
   }
-  /* line 541, ../sass/_media.scss */
+  /* line 543, ../sass/_media.scss */
   footer .social-block .social-list {
     float: left;
     -webkit-box-sizing: border-box;
@@ -2003,34 +2047,34 @@ footer .copyright .term-and-privacy a:hover {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 544, ../sass/_media.scss */
+  /* line 546, ../sass/_media.scss */
   footer .social-block .social-list li {
     display: block;
     margin: 15px auto;
   }
-  /* line 549, ../sass/_media.scss */
+  /* line 551, ../sass/_media.scss */
   footer .social-block .social-list li a span {
     font-size: 20px;
   }
-  /* line 556, ../sass/_media.scss */
+  /* line 558, ../sass/_media.scss */
   footer .phone-block {
     display: none;
   }
-  /* line 560, ../sass/_media.scss */
+  /* line 562, ../sass/_media.scss */
   footer .footer-menu {
     display: block;
     float: left;
     max-width: 385px;
     overflow: hidden;
   }
-  /* line 566, ../sass/_media.scss */
+  /* line 568, ../sass/_media.scss */
   footer .footer-menu .menu-list {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 568, ../sass/_media.scss */
+  /* line 570, ../sass/_media.scss */
   footer .footer-menu .menu-list li {
     text-align: left;
     display: block;
@@ -2038,20 +2082,20 @@ footer .copyright .term-and-privacy a:hover {
     width: 49%;
     margin: 5px 0;
   }
-  /* line 574, ../sass/_media.scss */
+  /* line 576, ../sass/_media.scss */
   footer .footer-menu .menu-list li a {
     color: black;
     font: 400 15px/20px "Open Sans", sans-serif;
   }
-  /* line 578, ../sass/_media.scss */
+  /* line 580, ../sass/_media.scss */
   footer .footer-menu .menu-list li a:hover {
     text-decoration: underline;
   }
-  /* line 582, ../sass/_media.scss */
+  /* line 584, ../sass/_media.scss */
   footer .footer-menu .menu-list li a.footer-menu-active {
     text-decoration: underline;
   }
-  /* line 590, ../sass/_media.scss */
+  /* line 592, ../sass/_media.scss */
   footer .copyright .term-and-privacy a {
     display: inline-block;
     margin: 0 10px;

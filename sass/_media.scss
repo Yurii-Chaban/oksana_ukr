@@ -385,13 +385,15 @@
 .reviews-page,
 .blog-page,
 .blog-more-page,
-.contact-page {
+.contact-page,
+.faq-page {
 	.about-content,
 	.services-content,
 	.reviews-content,
 	.blog-content,
 	.blog-more-content,
-	.contact-content {
+	.contact-content,
+	.faq-content {
 		.section-title {
 			&:after {
 				width: 550px;

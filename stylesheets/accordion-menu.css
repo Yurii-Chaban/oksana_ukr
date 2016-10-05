@@ -1,0 +1,61 @@
+/*----- Accordion -----*/
+a {
+	color: #010101;
+}
+.accordion,
+.accordion * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+	float: left;
+	width: 100%;
+}
+
+/*----- Section Titles -----*/
+.accordion-section {
+	position: relative;
+	margin-top: 20px;
+	background: #fff;
+}
+.accordion-section:first-child {
+	margin-top: 0;
+	border: none;
+}
+.accordion .accordion-section a:active {
+	color: #fff;
+}
+.accordion .accordion-section a:hover {
+	text-decoration: none;
+	color: #f29710;
+}
+.accordion .accordion-section a:active {
+	color: #fff;
+}
+.accordion-section-title {
+	color: black;
+	font: 600 18px / 25px 'OpenSans', sans-serif;
+	text-decoration: underline;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.accordion-section-title.active {
+	text-decoration: none;
+	color: #f29710;
+}
+/*----- Section Content -----*/
+
+
+.accordion-section-content {
+	display: none;
+	margin: 15px 0 40px;
+	color: black;
+	font: 300 16px / 22px 'OpenSans' ,sans-serif;
+}
+	/*----------------------------*/
