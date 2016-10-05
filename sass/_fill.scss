@@ -1,0 +1,123 @@
+.fill-page {
+	padding: 20px 0 30px;
+	.fill-content {
+		// overflow: hidden;
+
+		.section-title {
+			@include section-title;
+		}
+
+		.wrap-welcome {
+			padding: 0 0 23px;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				content: "";
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+				width: 268px;
+				height: 1px;
+				opacity: 0.8;
+				background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
+			}
+
+			.for-girl-sign,
+			.wrap-word {
+				color: black;
+				font: 300 18px / 22px $OpenSans;
+			}
+			.wrap-word {
+				span {
+					display: block;
+				}
+			}
+		}
+
+		.form-wrapper {
+			.form-title {
+				margin: 20px auto 26px;
+				color: black;
+				font: 700 18px / 24px $OpenSans;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			#fill-form {
+				label {
+					color: black;
+					font: 400 18px / 22px $OpenSans;
+				}
+
+				input,
+				textarea {
+					outline: none;
+				}
+
+				textarea {
+					resize: none;
+				}
+
+				input {
+					width: 100%;
+					@include border-box;
+					height: 36px;
+					padding: 0 0 0 10px;
+					font: 400 18px / 36px $OpenSans;
+					border: inherit;
+					background: inherit;
+					border: 1px solid rgba(15, 16, 16, 0.36);
+				}
+
+				.row {
+					&>label {
+						display: block;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+
+
+
+.question-circle {
+	width: 24px !important;
+	height: 22px !important;
+	background: #F29912;
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	left: 15px;
+	top: 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 21px;
+
+	.lang-popup {
+		display: none;
+		position: absolute;
+		padding: 10px;
+		left: 0px;
+		z-index: 1;
+		top: 23px;
+		background: #fff;
+		border: 1px solid #F29912;
+		width: 250px;
+		color: #3a3a3a;
+		text-align: left;
+
+		b {
+			font-weight: bold;
+		}
+	}
+
+	&:hover .lang-popup {
+		display: block;
+	}
+}

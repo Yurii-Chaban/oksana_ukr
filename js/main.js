@@ -102,3 +102,20 @@ var swiper = new Swiper('.swiper-container-desctop', {
     speed: 1000,
     spaceBetween: 0
 });
+// FOR DROPDOWN ACTIVE
+$(document).ready(function($) {
+    $('.ui.dropdown')
+    .dropdown()
+    ;
+});     
+// FOR DISABLED / ANABLED LENGUAGE
+$( document ).ready(function() {
+
+    $( '.girlLanguage').parent('li').find('input[type=radio]').attr('disabled',true);
+
+    $('.girlLanguage').on('change',function(){
+        $( '.girlLanguage:checked').parent('li').find('input[type=radio]').attr('disabled',false);
+        $( '.girlLanguage').filter(":not(':checked')").parent('li').find('input[type=radio]').attr('disabled',true);
+    });
+
+}); 

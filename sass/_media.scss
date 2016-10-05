@@ -386,14 +386,16 @@
 .blog-page,
 .blog-more-page,
 .contact-page,
-.faq-page {
+.faq-page,
+.fill-page {
 	.about-content,
 	.services-content,
 	.reviews-content,
 	.blog-content,
 	.blog-more-content,
 	.contact-content,
-	.faq-content {
+	.faq-content,
+	.fill-content {
 		.section-title {
 			&:after {
 				width: 550px;
