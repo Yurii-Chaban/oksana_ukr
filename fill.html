@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="stylesheets/swiper.min.css">
 <link rel="stylesheet" href="stylesheets/accordion-menu.css">
 <link rel="stylesheet" href="stylesheets/semantic.min.css">
+<link rel="stylesheet" href="stylesheets/components/icon.min.css">
 <link rel="stylesheet" href="stylesheets/dropdown.min.css">
 <link rel="stylesheet" href="stylesheets/main_styles.css">
 </head>
@@ -160,7 +161,7 @@
 				<div class="row">
 					<label>Дата рождения*</label>
 					<div class="ui compact selection dropdown birthday-day">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down angle down"></i>
 						<div class="text">Дата </div>
 						<div class="menu">
 							<div class="item">01</div>
@@ -197,7 +198,7 @@
 						</div>
 					</div>
 					<div class="ui compact selection dropdown birthday-month">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Месяц</div>
 						<div class="menu">
 							<div class="item">Январь</div>
@@ -215,7 +216,7 @@
 						</div>
 					</div>
 					<div class="ui compact selection dropdown birthday-year">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Год</div>
 						<div class="menu">
 							<div class="item">2016</div>
@@ -302,7 +303,7 @@
 					<label for="country-select">Страна*</label>
 					<div id="country-select" class="ui fluid search selection dropdown country-select">
 						<input type="hidden" name="country">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="default text">Выбрать</div>
 						<div class="menu">
 							<div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
@@ -552,7 +553,7 @@
 				</div>
 				<div class="row">
 					<label for="select-city">Город*</label>
-					<select class="ui search dropdown">
+					<select class="ui search dropdown select-city">
 						<option value="">Выбрать</option>
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
@@ -623,7 +624,7 @@
 					<label for="nationality">Национальность*</label>
 					<div id="nationality" class="ui fluid search selection dropdown nationality-dropdown">
 						<input type="hidden" name="nationality">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="default text">Выбрать</div>
 						<div class="menu">
 							<div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
@@ -882,7 +883,7 @@
 				<div class="row">
 					<label for="family-status">Семейное положение</label>
 					<div id="family-status" class="ui compact selection dropdown family-status">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">В браке не состояла</div>
@@ -895,7 +896,7 @@
 				<div class="row">
 					<label for="children">Дети</label>
 					<div id="children" class="ui compact selection dropdown children-status">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">Нет детей</div>
@@ -909,7 +910,7 @@
 				<div class="row">
 					<label for="future-children">Планы иметь детей в будущем</label>
 					<div id="future-children" class="ui compact selection dropdown future-children-status">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">Да</div>
@@ -921,7 +922,7 @@
 				<div class="row">
 					<label for="growth">Рост, см </label>
 					<div id="growth" class="ui compact selection dropdown growth-status">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">150</div>
@@ -981,7 +982,7 @@
 				<div class="row">
 					<label for="body-type">Телосложение </label>
 					<div id="body-type" class="ui compact selection dropdown body-type">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">Худощавое</div>
@@ -996,7 +997,7 @@
 				<div class="row">
 					<label for="weight">Вес, кг</label>
 					<div id="weight" class="ui compact selection dropdown weight-status">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">50</div>
@@ -1107,7 +1108,7 @@
 				<div class="row">
 					<label for="hair-color">Цвет волос</label>
 					<div id="hair-color" class="ui compact selection dropdown hair-color">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">Светлый</div>
@@ -1122,7 +1123,7 @@
 				<div class="row">
 					<label for="eyes-color">Цвет глаз</label>
 					<div id="eyes-color" class="ui compact selection dropdown eyes-color">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">Черные</div>
@@ -1428,7 +1429,7 @@
 				<div class="row">
 					<label for="attitude-towards-smoking">Отношение к курению</label>
 					<div id="attitude-towards-smoking" class="ui compact selection dropdown attitude-towards-smoking">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">Никогда</div>
@@ -1440,7 +1441,7 @@
 				<div class="row">
 					<label for="worship">Вероисповедование</label>
 					<div id="worship" class="ui compact selection dropdown worship">
-						<i class="dropdown icon"></i>
+						<i class="dropdown icon angle down"></i>
 						<div class="text">Выбрать</div>
 						<div class="menu">
 							<div class="item">Католик</div>
@@ -1454,7 +1455,7 @@
 					<div class="row">
 						<label for="education">Образование</label>
 						<div id="education" class="ui compact selection dropdown education">
-							<i class="dropdown icon"></i>
+							<i class="dropdown icon angle down"></i>
 							<div class="text">Выбрать</div>
 							<div class="menu">
 								<div class="item">Среднее образование</div>
@@ -1758,7 +1759,7 @@
 						<div class="row">
 							<label for="zodiac-sign">Знак зодиака</label>
 							<div id="zodiac-sign" class="ui compact selection dropdown zodiac-sign">
-								<i class="dropdown icon"></i>
+								<i class="dropdown icon angle down"></i>
 								<div class="text">Выбрать</div>
 								<div class="menu">
 									<div class="item">Водолей (21.01-19.02)</div>
@@ -1783,7 +1784,7 @@
 						<div class="row">
 							<label>Возраст мужчины</label>
 							<div class="ui compact selection dropdown age-from">
-								<i class="dropdown icon"></i>
+								<i class="dropdown icon angle down"></i>
 								<div class="text">От</div>
 								<div class="menu">
 									<								<div class="item">18</div>
@@ -1872,7 +1873,7 @@
 								</div>
 							</div>
 							<div class="ui compact selection dropdown age-to">
-								<i class="dropdown icon"></i>
+								<i class="dropdown icon angle down"></i>
 								<div class="text">До</div>
 								<div class="menu">
 									<								<div class="item">18</div>

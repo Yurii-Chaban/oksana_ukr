@@ -1,3 +1,16 @@
+@font-face {
+	font-family: 'Icon';
+	src: url('../stylesheets/themes/default/assets/fonts/icons.eot') format('eot');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.otf') format('otf');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.svg') format('svg');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.ttf') format('ttf');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.woff') format('woff');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 .fill-page {
 	padding: 20px 0 30px;
 	.fill-content {
@@ -45,6 +58,12 @@
 			}
 
 			#fill-form {
+
+				i.icon.angle.down:before {
+					content: "\f107";
+					font-family: 'Icon'
+				}
+
 				label {
 					color: black;
 					font: 400 18px / 22px $OpenSans;
@@ -68,6 +87,11 @@
 					border: inherit;
 					background: inherit;
 					border: 1px solid rgba(15, 16, 16, 0.36);
+				}
+
+				input[type="checkbox"],
+				input[type="radio"] {
+					height: auto;
 				}
 
 				.row {

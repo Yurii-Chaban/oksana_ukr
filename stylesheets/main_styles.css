@@ -1511,11 +1511,22 @@ footer .copyright .term-and-privacy a:hover {
   background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
 }
 
-/* line 1, ../sass/_fill.scss */
+@font-face {
+  font-family: 'Icon';
+  src: url("../stylesheets/themes/default/assets/fonts/icons.eot") format("eot");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.otf") format("otf");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.svg") format("svg");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.ttf") format("ttf");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.woff") format("woff");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 14, ../sass/_fill.scss */
 .fill-page {
   padding: 20px 0 30px;
 }
-/* line 6, ../sass/_fill.scss */
+/* line 19, ../sass/_fill.scss */
 .fill-page .fill-content .section-title {
   position: relative;
   margin: 0 auto 17px;
@@ -1537,12 +1548,12 @@ footer .copyright .term-and-privacy a:hover {
   opacity: 0.8;
   background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
 }
-/* line 10, ../sass/_fill.scss */
+/* line 23, ../sass/_fill.scss */
 .fill-page .fill-content .wrap-welcome {
   padding: 0 0 23px;
   position: relative;
 }
-/* line 14, ../sass/_fill.scss */
+/* line 27, ../sass/_fill.scss */
 .fill-page .fill-content .wrap-welcome:after {
   position: absolute;
   content: "";
@@ -1554,17 +1565,17 @@ footer .copyright .term-and-privacy a:hover {
   opacity: 0.8;
   background-image: linear-gradient(to right, transparent 0%, #999 40%, #999 60%, transparent 100%);
 }
-/* line 26, ../sass/_fill.scss */
+/* line 39, ../sass/_fill.scss */
 .fill-page .fill-content .wrap-welcome .for-girl-sign,
 .fill-page .fill-content .wrap-welcome .wrap-word {
   color: black;
   font: 300 18px/22px "Open Sans", sans-serif;
 }
-/* line 32, ../sass/_fill.scss */
+/* line 45, ../sass/_fill.scss */
 .fill-page .fill-content .wrap-welcome .wrap-word span {
   display: block;
 }
-/* line 39, ../sass/_fill.scss */
+/* line 52, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper .form-title {
   margin: 20px auto 26px;
   color: black;
@@ -1572,21 +1583,26 @@ footer .copyright .term-and-privacy a:hover {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 48, ../sass/_fill.scss */
+/* line 62, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form i.icon.angle.down:before {
+  content: "\f107";
+  font-family: "Icon";
+}
+/* line 67, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form label {
   color: black;
   font: 400 18px/22px "Open Sans", sans-serif;
 }
-/* line 53, ../sass/_fill.scss */
+/* line 72, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input,
 .fill-page .fill-content .form-wrapper #fill-form textarea {
   outline: none;
 }
-/* line 58, ../sass/_fill.scss */
+/* line 77, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form textarea {
   resize: none;
 }
-/* line 62, ../sass/_fill.scss */
+/* line 81, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1600,12 +1616,17 @@ footer .copyright .term-and-privacy a:hover {
   background: inherit;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 74, ../sass/_fill.scss */
+/* line 92, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form input[type="checkbox"],
+.fill-page .fill-content .form-wrapper #fill-form input[type="radio"] {
+  height: auto;
+}
+/* line 98, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .row > label {
   display: block;
 }
 
-/* line 88, ../sass/_fill.scss */
+/* line 112, ../sass/_fill.scss */
 .question-circle {
   width: 24px !important;
   height: 22px !important;
@@ -1620,7 +1641,7 @@ footer .copyright .term-and-privacy a:hover {
   font-size: 18px;
   line-height: 21px;
 }
-/* line 102, ../sass/_fill.scss */
+/* line 126, ../sass/_fill.scss */
 .question-circle .lang-popup {
   display: none;
   position: absolute;
@@ -1634,11 +1655,11 @@ footer .copyright .term-and-privacy a:hover {
   color: #3a3a3a;
   text-align: left;
 }
-/* line 115, ../sass/_fill.scss */
+/* line 139, ../sass/_fill.scss */
 .question-circle .lang-popup b {
   font-weight: bold;
 }
-/* line 120, ../sass/_fill.scss */
+/* line 144, ../sass/_fill.scss */
 .question-circle:hover .lang-popup {
   display: block;
 }

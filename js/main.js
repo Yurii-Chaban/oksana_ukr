@@ -119,3 +119,7 @@ $( document ).ready(function() {
     });
 
 }); 
+// FIND DROPDOVN AND ADD CLASS ANGLE DOWN IN SELECT CITY BLOCK
+$(document).ready(function($) {
+    $(".select-city").find(".icon").addClass('angle down');
+});
