@@ -6,7 +6,7 @@
 			@include section-title;
 		}
 
-		.contcts-list {
+		.contacts-list {
 			@include border-box;
 			position: relative;
 			overflow: hidden;
@@ -78,19 +78,29 @@
 						outline: none;
 						border: none;
 						border: 1px solid rgba(15, 16, 16, 0.36);
+						color: #000;
+						font: 400 18px / 20px $OpenSans;
 					}
+
+					#form-name.error-field,
+					#form-email.error-field,
+					#form-phone.error-field,
+					#form-message.error-field {
+						background-color: #ed1c24;
+					}
+
+
 					#form-name,
 					#form-email,
 					#form-phone {
 						height: 36px;
+						padding: 0 0 0 10px;
 					}
 
 					#form-message {
 						resize: none;
 						height: 138px;
 						padding: 12px 0 0 10px;
-						color: #000;
-						font: 400 18px / 20px $OpenSans;
 					}
 					::-webkit-input-placeholder {
 						color: #8f8f8f;

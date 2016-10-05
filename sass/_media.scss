@@ -203,6 +203,49 @@
 			}
 		}
 	}
+
+	// FOR CONTACT PAGE
+	.contact-page {
+		.contact-content {
+			.contacts-list {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				display: -webkit-flex;
+				display: flex;
+				-ms-flex-pack: space-around;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+
+				li {
+					margin: 20px auto 30px;
+				}
+			}
+
+			.feedback-form {
+				max-width: 510px;
+				margin: 30px auto;
+
+				#feedback-form {
+					.row {
+						overflow: hidden;
+						clear: both;
+						label {
+							float: left;
+						}
+						#form-name,
+						#form-email,
+						#form-phone,
+						#form-message {
+							float: right;
+							width: 70%;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -341,12 +384,14 @@
 .services-page,
 .reviews-page,
 .blog-page,
-.blog-more-page {
+.blog-more-page,
+.contact-page {
 	.about-content,
 	.services-content,
 	.reviews-content,
 	.blog-content,
-	.blog-more-content {
+	.blog-more-content,
+	.contact-content {
 		.section-title {
 			&:after {
 				width: 550px;
@@ -425,32 +470,42 @@
 					-webkit-align-items: center;
 					align-items: center;
 
-						img {
-							max-width: 90%;
-						}
-					}
-
-					.swiper-button-next, .swiper-button-prev {
-						width: 20px;
-						height: 30px;
-					}
-
-					.swiper-button-prev {
-						background-image: none;
-						background: url('../images/prev-btn.png') no-repeat;
-					}
-					.swiper-button-next {
-						background-image: none;
-						background: url('../images/next-btn.png') no-repeat;
+					img {
+						max-width: 90%;
 					}
 				}
+
+				.swiper-button-next, .swiper-button-prev {
+					width: 20px;
+					height: 30px;
+				}
+
+				.swiper-button-prev {
+					background-image: none;
+					background: url('../images/prev-btn.png') no-repeat;
+				}
+				.swiper-button-next {
+					background-image: none;
+					background: url('../images/next-btn.png') no-repeat;
+				}
 			}
-			.videoWrapper {
-				padding-bottom: 47.25%;
+		}
+		.videoWrapper {
+			padding-bottom: 47.25%;
+		}
+	}
+}
+
+// FOR CONTACT PAGE
+.contact-page {
+	.contact-content {
+		.contacts-list {
+			&:after {
+				width: 550px;
 			}
 		}
 	}
-
+}
 	// FOOTER
 
 	footer {
