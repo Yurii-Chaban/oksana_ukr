@@ -1575,7 +1575,12 @@ footer .copyright .term-and-privacy a:hover {
 .fill-page .fill-content .wrap-welcome .wrap-word span {
   display: block;
 }
-/* line 52, ../sass/_fill.scss */
+/* line 51, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper {
+  max-width: 725px;
+  margin: 0 auto;
+}
+/* line 54, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper .form-title {
   margin: 20px auto 26px;
   color: black;
@@ -1584,25 +1589,69 @@ footer .copyright .term-and-privacy a:hover {
   text-transform: uppercase;
 }
 /* line 62, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form {
+  overflow: hidden;
+}
+/* line 65, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form i.icon.angle.down:before {
   content: "\f107";
-  font-family: "Icon";
+  font-family: 'Icon';
+  font-size: 30px;
+  color: #fff;
 }
-/* line 67, ../sass/_fill.scss */
+/* line 72, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .ui.selection.dropdown > .dropdown.icon {
+  cursor: pointer;
+  position: absolute;
+  background-color: #f29912;
+  width: auto;
+  height: auto;
+  line-height: 1.2142em;
+  top: .7em;
+  right: 0.8em;
+  z-index: 3;
+  margin: -.78571429em;
+  padding: 12px 0 0 0;
+  opacity: .8;
+  -webkit-transition: opacity .1s ease;
+  transition: opacity .1s ease;
+}
+/* line 89, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .ui.selection.dropdown > .dropdown.icon {
+  width: 33px;
+  height: 36px;
+}
+/* line 93, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .ui.selection.dropdown {
+  min-height: 36px;
+  padding: .5em 2.7em .2em 0.5em;
+}
+/* line 96, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .ui.selection.dropdown > .text {
+  color: black;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 101, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .selection.dropdown {
+  width: 100%;
+}
+/* line 105, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form label {
+  display: inline-block;
+  margin: 0 0 8px 0;
   color: black;
   font: 400 18px/22px "Open Sans", sans-serif;
 }
-/* line 72, ../sass/_fill.scss */
+/* line 112, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input,
 .fill-page .fill-content .form-wrapper #fill-form textarea {
   outline: none;
 }
-/* line 77, ../sass/_fill.scss */
+/* line 117, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form textarea {
   resize: none;
 }
-/* line 81, ../sass/_fill.scss */
+/* line 121, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1616,18 +1665,60 @@ footer .copyright .term-and-privacy a:hover {
   background: inherit;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 92, ../sass/_fill.scss */
+/* line 132, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input[type="checkbox"],
 .fill-page .fill-content .form-wrapper #fill-form input[type="radio"] {
   height: auto;
 }
-/* line 98, ../sass/_fill.scss */
+/* line 137, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .row {
+  margin: 25px auto 0;
+}
+/* line 139, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .row > label {
   display: block;
 }
-
-/* line 112, ../sass/_fill.scss */
-.question-circle {
+/* line 147, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.dropdown > .text {
+  color: black;
+  font: 400 13px/18px "Open Sans", sans-serif;
+}
+/* line 151, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.compact.selection.dropdown {
+  min-width: 85px;
+  width: 29%;
+  margin: 0 -1px;
+}
+/* line 157, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.compact.selection.dropdown.birthday-month {
+  min-width: 114px;
+  width: 40%;
+}
+/* line 164, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-city .select-city {
+  width: 100%;
+}
+/* line 174, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-email label[for="email"] span {
+  display: none;
+}
+/* line 189, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-character-traits input[type="checkbox"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 11px 0 0;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+}
+/* line 198, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .styling-item {
+  display: block;
+  margin: 0 0 20px 0;
+  color: black;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 205, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle {
   width: 24px !important;
   height: 22px !important;
   background: #F29912;
@@ -1641,12 +1732,13 @@ footer .copyright .term-and-privacy a:hover {
   font-size: 18px;
   line-height: 21px;
 }
-/* line 126, ../sass/_fill.scss */
-.question-circle .lang-popup {
+/* line 218, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle .lang-popup {
   display: none;
   position: absolute;
   padding: 10px;
-  left: 0px;
+  left: 20%;
+  transform: translateX(-80%);
   z-index: 1;
   top: 23px;
   background: #fff;
@@ -1655,13 +1747,148 @@ footer .copyright .term-and-privacy a:hover {
   color: #3a3a3a;
   text-align: left;
 }
-/* line 139, ../sass/_fill.scss */
-.question-circle .lang-popup b {
+/* line 231, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle .lang-popup b {
   font-weight: bold;
 }
-/* line 144, ../sass/_fill.scss */
-.question-circle:hover .lang-popup {
+/* line 236, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle:hover .lang-popup {
   display: block;
+}
+/* line 242, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li {
+  margin: 5px 0;
+}
+/* line 245, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+}
+/* line 250, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li .radio-container {
+  margin: 3px 0;
+}
+/* line 252, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li .radio-container div {
+  display: inline-block;
+}
+/* line 254, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li .radio-container div input[type="radio"] {
+  display: inline-block;
+  width: auto;
+}
+/* line 265, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-girl-interesting .interesting-title {
+  display: block;
+  margin: 0 0 10px 0;
+  color: black;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+/* line 271, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-girl-interesting label {
+  display: inline;
+  margin: 0;
+}
+/* line 275, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-girl-interesting input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+}
+/* line 282, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-about-yourself #about-yourself {
+  width: 100%;
+  height: 123px;
+  padding: 10px 0 0 10px;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+}
+/* line 290, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-man-age .age-from,
+.fill-page .fill-content .form-wrapper #fill-form .for-man-age .age-to {
+  width: 47%;
+  margin: 0 1%;
+}
+/* line 297, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-wishes-to-partner #wishes-to-partner {
+  width: 100%;
+  height: 123px;
+  padding: 10px 0 0 10px;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+}
+/* line 305, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-upload-picture #upload-btn {
+  display: block;
+  height: 39px;
+  margin: 15px auto 30px;
+  font: 400 15px/39px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f29912;
+  text-align: center;
+  border: 1px solid white;
+}
+/* line 318, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-upload-ather #upload-ather-btn {
+  display: block;
+  height: 55px;
+  margin: 15px auto 30px;
+  background-color: #f29912;
+  text-align: center;
+  border: 1px solid white;
+}
+/* line 325, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-upload-ather #upload-ather-btn span {
+  display: block;
+  margin-top: 12px;
+  font: 400 15px/17px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 334, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-agree {
+  overflow: hiddenl;
+}
+/* line 336, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-agree #agreement {
+  display: block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin: 20px 15px 0 0;
+  border: 1px solid rgba(15, 16, 16, 0.36);
+}
+/* line 344, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-agree label[for="agreement"] {
+  display: block;
+  float: left;
+  width: 90%;
+  height: 55px;
+  background-color: #f29912;
+  text-align: center;
+  border: 1px solid white;
+}
+/* line 352, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper #fill-form .for-agree label[for="agreement"] span {
+  display: block;
+  margin-top: 12px;
+  font: 400 15px/17px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 365, ../sass/_fill.scss */
+.fill-page .fill-content .form-wrapper input#submit-girl-form {
+  display: block;
+  float: right;
+  width: 149px;
+  height: 39px;
+  margin: 20px 0 30px;
+  color: white;
+  font: 400 18px/39px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #f29912;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 @media (min-width: 480px) {
@@ -1669,13 +1896,30 @@ footer .copyright .term-and-privacy a:hover {
   .blog-more-page .blog-more-content .mobile-slider .swiper-container-mobile .swiper-slide img {
     max-width: 100%;
   }
+
+  /* line 21, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.compact.selection.dropdown {
+    width: 32.5%;
+    margin: auto;
+  }
+  /* line 25, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.compact.selection.dropdown.birthday-month {
+    width: 32.5%;
+    margin: auto;
+  }
+  /* line 32, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle .lang-popup {
+    top: 22px;
+    left: 0;
+    transform: inherit;
+  }
 }
 @media (min-width: 768px) {
-  /* line 21, ../sass/_media.scss */
+  /* line 49, ../sass/_media.scss */
   .page-slider .swiper-container-home-page {
     height: 485px;
   }
-  /* line 25, ../sass/_media.scss */
+  /* line 53, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title {
     width: auto;
     text-align: left;
@@ -1683,18 +1927,18 @@ footer .copyright .term-and-privacy a:hover {
     left: 50%;
     transform: translateX(-50%);
   }
-  /* line 31, ../sass/_media.scss */
+  /* line 59, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title a {
     font-size: 35px;
     line-height: 40px;
   }
-  /* line 38, ../sass/_media.scss */
+  /* line 66, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-pagination-bullets {
     display: block;
     bottom: 20px;
     right: 10px;
   }
-  /* line 43, ../sass/_media.scss */
+  /* line 71, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-pagination-bullets .swiper-pagination-bullet {
     width: 17px;
     height: 17px;
@@ -1703,22 +1947,22 @@ footer .copyright .term-and-privacy a:hover {
     border: 2px solid #fca013;
     opacity: 1;
   }
-  /* line 51, ../sass/_media.scss */
+  /* line 79, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-pagination-bullets .swiper-pagination-bullet-active {
     background-color: #000;
     border-color: #000;
   }
 
-  /* line 61, ../sass/_media.scss */
+  /* line 89, ../sass/_media.scss */
   .home-about .section-title:after {
     width: 550px;
   }
 
-  /* line 69, ../sass/_media.scss */
+  /* line 97, ../sass/_media.scss */
   .girls-reviews .section-title:after {
     width: 550px;
   }
-  /* line 73, ../sass/_media.scss */
+  /* line 101, ../sass/_media.scss */
   .girls-reviews .girls-reviews-list {
     margin: 40px auto;
     padding: 0 0 50px;
@@ -1732,20 +1976,20 @@ footer .copyright .term-and-privacy a:hover {
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
-  /* line 87, ../sass/_media.scss */
+  /* line 115, ../sass/_media.scss */
   .girls-reviews .girls-reviews-list li {
     margin: 0 auto;
   }
-  /* line 91, ../sass/_media.scss */
+  /* line 119, ../sass/_media.scss */
   .girls-reviews .girls-reviews-list:after {
     width: 550px;
   }
 
-  /* line 97, ../sass/_media.scss */
+  /* line 125, ../sass/_media.scss */
   .fill-section {
     padding: 0 0 42px 0;
   }
-  /* line 99, ../sass/_media.scss */
+  /* line 127, ../sass/_media.scss */
   .fill-section .section-img-wrapper {
     height: 410px;
     max-width: 972px;
@@ -1753,95 +1997,95 @@ footer .copyright .term-and-privacy a:hover {
     margin: 0 auto;
     text-align: center;
   }
-  /* line 106, ../sass/_media.scss */
+  /* line 134, ../sass/_media.scss */
   .fill-section .section-img-wrapper #border-block {
     width: 300px;
     bottom: 120px;
     border-bottom: 120px solid rgba(246, 154, 16, 0.6);
   }
-  /* line 111, ../sass/_media.scss */
+  /* line 139, ../sass/_media.scss */
   .fill-section .section-img-wrapper #border-block a {
     font-size: 32px;
     line-height: 38px;
   }
 
-  /* line 122, ../sass/_media.scss */
+  /* line 150, ../sass/_media.scss */
   .about-page .about-content .section-title {
     margin: 0 auto 30px;
   }
-  /* line 126, ../sass/_media.scss */
+  /* line 154, ../sass/_media.scss */
   .about-page .about-content .img-container {
     float: left;
     margin: 0 15px 5px 0;
   }
 
-  /* line 136, ../sass/_media.scss */
+  /* line 164, ../sass/_media.scss */
   .services-page .services-content .section-title {
     margin: 0 auto 30px;
   }
-  /* line 140, ../sass/_media.scss */
+  /* line 168, ../sass/_media.scss */
   .services-page .services-content .img-container {
     float: left;
     margin: 0 15px 5px 0;
   }
 
-  /* line 150, ../sass/_media.scss */
+  /* line 178, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li {
     overflow: hidden;
     clear: both;
   }
-  /* line 153, ../sass/_media.scss */
+  /* line 181, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li .reviews-img-container {
     float: left;
     margin: 0 15px 0 0;
   }
-  /* line 158, ../sass/_media.scss */
+  /* line 186, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li .overflow-block {
     overflow: hidden;
   }
-  /* line 162, ../sass/_media.scss */
+  /* line 190, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li .person-name {
     margin: 0 0 10px;
   }
-  /* line 165, ../sass/_media.scss */
+  /* line 193, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li .post-content {
     margin: 15px auto 0;
     font-size: 16px;
   }
-  /* line 168, ../sass/_media.scss */
+  /* line 196, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li .post-content span {
     display: inline;
   }
 
-  /* line 180, ../sass/_media.scss */
+  /* line 208, ../sass/_media.scss */
   .blog-page .blog-content .blog-list li {
     overflow: hidden;
     clear: both;
   }
-  /* line 183, ../sass/_media.scss */
+  /* line 211, ../sass/_media.scss */
   .blog-page .blog-content .blog-list li .blog-img-container {
     float: left;
     margin: 0 15px 0 0;
   }
-  /* line 188, ../sass/_media.scss */
+  /* line 216, ../sass/_media.scss */
   .blog-page .blog-content .blog-list li .overflow-block {
     overflow: hidden;
   }
-  /* line 192, ../sass/_media.scss */
+  /* line 220, ../sass/_media.scss */
   .blog-page .blog-content .blog-list li .post-title {
     margin: 0 0 10px;
   }
-  /* line 195, ../sass/_media.scss */
+  /* line 223, ../sass/_media.scss */
   .blog-page .blog-content .blog-list li .post-content {
     margin: 15px auto 0;
     font-size: 16px;
   }
-  /* line 198, ../sass/_media.scss */
+  /* line 226, ../sass/_media.scss */
   .blog-page .blog-content .blog-list li .post-content span {
     display: inline;
   }
 
-  /* line 210, ../sass/_media.scss */
+  /* line 238, ../sass/_media.scss */
   .contact-page .contact-content .contacts-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1853,25 +2097,25 @@ footer .copyright .term-and-privacy a:hover {
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
-  /* line 221, ../sass/_media.scss */
+  /* line 249, ../sass/_media.scss */
   .contact-page .contact-content .contacts-list li {
     margin: 20px auto 30px;
   }
-  /* line 226, ../sass/_media.scss */
+  /* line 254, ../sass/_media.scss */
   .contact-page .contact-content .feedback-form {
     max-width: 510px;
     margin: 30px auto;
   }
-  /* line 231, ../sass/_media.scss */
+  /* line 259, ../sass/_media.scss */
   .contact-page .contact-content .feedback-form #feedback-form .row {
     overflow: hidden;
     clear: both;
   }
-  /* line 234, ../sass/_media.scss */
+  /* line 262, ../sass/_media.scss */
   .contact-page .contact-content .feedback-form #feedback-form .row label {
     float: left;
   }
-  /* line 237, ../sass/_media.scss */
+  /* line 265, ../sass/_media.scss */
   .contact-page .contact-content .feedback-form #feedback-form .row #form-name,
   .contact-page .contact-content .feedback-form #feedback-form .row #form-email,
   .contact-page .contact-content .feedback-form #feedback-form .row #form-phone,
@@ -1879,48 +2123,406 @@ footer .copyright .term-and-privacy a:hover {
     float: right;
     width: 70%;
   }
+
+  /* line 282, ../sass/_media.scss */
+  .fill-page .fill-content .wrap-welcome .wrap-word span {
+    display: inline;
+  }
+  /* line 289, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .for-name,
+  .fill-page .fill-content .form-wrapper #fill-form .for-surname {
+    clear: both;
+    min-height: 36px;
+  }
+  /* line 293, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .for-name label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-surname label {
+    width: 50%;
+    float: left;
+  }
+  /* line 297, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .for-name input,
+  .fill-page .fill-content .form-wrapper #fill-form .for-surname input {
+    width: 50%;
+    float: right;
+  }
+  /* line 302, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color {
+    clear: both;
+    min-height: 36px;
+  }
+  /* line 321, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color label,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color label {
+    width: 50%;
+    float: left;
+  }
+  /* line 325, ../sass/_media.scss */
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #region,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #address,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #email,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #children,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .fot-birthday #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-country #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-city #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-region #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-town #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-address #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-nationality #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-email #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-phone #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-family-status #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-children #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-future-children #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-growth #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-body-type #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-weight #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-hair-color #eyes-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color .grouping-container,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color .country-select,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color .select-city,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #region,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #city_willage_town,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #address,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #nationality,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #email,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #phone,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #family-status,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #future-children,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #growth,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #body-type,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #weight,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #hair-color,
+  .fill-page .fill-content .form-wrapper #fill-form .for-eyes-color #eyes-color {
+    float: right;
+    width: 50%;
+  }
 }
 @media (min-width: 1024px) {
-  /* line 253, ../sass/_media.scss */
+  /* line 354, ../sass/_media.scss */
   .direction {
     display: none;
   }
 
-  /* line 258, ../sass/_media.scss */
+  /* line 359, ../sass/_media.scss */
   header {
     overflow: hidden;
     max-height: 113px;
     padding: 11px 0 0;
   }
-  /* line 262, ../sass/_media.scss */
+  /* line 363, ../sass/_media.scss */
   header .dropdovn-menu-mobile,
   header .call-us-block {
     display: none;
   }
-  /* line 267, ../sass/_media.scss */
+  /* line 368, ../sass/_media.scss */
   header .block-logo {
     float: left;
   }
-  /* line 270, ../sass/_media.scss */
+  /* line 371, ../sass/_media.scss */
   header .block-logo .logo {
     max-width: 200px;
     max-height: 100%;
     padding: 5px;
   }
-  /* line 277, ../sass/_media.scss */
+  /* line 378, ../sass/_media.scss */
   header .lenguage-block {
     display: block;
     float: right;
     margin: 10px 0 0;
   }
-  /* line 282, ../sass/_media.scss */
+  /* line 383, ../sass/_media.scss */
   header .lenguage-block #lenguage-list {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 285, ../sass/_media.scss */
+  /* line 386, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li {
     display: block;
     width: 56px;
@@ -1928,7 +2530,7 @@ footer .copyright .term-and-privacy a:hover {
     float: left;
     text-align: center;
   }
-  /* line 292, ../sass/_media.scss */
+  /* line 393, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li a {
     display: block;
     width: 100%;
@@ -1942,17 +2544,17 @@ footer .copyright .term-and-privacy a:hover {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
-  /* line 302, ../sass/_media.scss */
+  /* line 403, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li a:hover {
     color: #d72828;
     border-color: #d72828;
   }
-  /* line 307, ../sass/_media.scss */
+  /* line 408, ../sass/_media.scss */
   header .lenguage-block #lenguage-list li a.lenguage-item-active {
     color: #d72828;
     border-color: #d72828;
   }
-  /* line 315, ../sass/_media.scss */
+  /* line 416, ../sass/_media.scss */
   header .main-menu {
     display: block;
     height: 43px;
@@ -1961,14 +2563,14 @@ footer .copyright .term-and-privacy a:hover {
     overflow: hidden;
     background-image: linear-gradient(to top, white 0%, #ffba62 0%, #ef9710 0%, #fda115 100%);
   }
-  /* line 323, ../sass/_media.scss */
+  /* line 424, ../sass/_media.scss */
   header .main-menu .list-menu {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 326, ../sass/_media.scss */
+  /* line 427, ../sass/_media.scss */
   header .main-menu .list-menu li {
     display: block;
     float: left;
@@ -1976,15 +2578,15 @@ footer .copyright .term-and-privacy a:hover {
     padding: 0 17px 0 0;
     border-right: 1px solid #f0e9e0;
   }
-  /* line 333, ../sass/_media.scss */
+  /* line 434, ../sass/_media.scss */
   header .main-menu .list-menu li:first-child {
     margin-left: 0;
   }
-  /* line 337, ../sass/_media.scss */
+  /* line 438, ../sass/_media.scss */
   header .main-menu .list-menu li:last-child {
     border: none;
   }
-  /* line 341, ../sass/_media.scss */
+  /* line 442, ../sass/_media.scss */
   header .main-menu .list-menu li a {
     display: block;
     width: 100%;
@@ -1992,31 +2594,31 @@ footer .copyright .term-and-privacy a:hover {
     color: black;
     font: 400 16px/43px "Open Sans", sans-serif;
   }
-  /* line 348, ../sass/_media.scss */
+  /* line 449, ../sass/_media.scss */
   header .main-menu .list-menu li a:hover {
     text-decoration: underline;
   }
-  /* line 352, ../sass/_media.scss */
+  /* line 453, ../sass/_media.scss */
   header .main-menu .list-menu li a.desctop-menu-active {
     text-decoration: underline;
   }
 
-  /* line 365, ../sass/_media.scss */
+  /* line 466, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .opacity-block {
     opacity: 0.90;
   }
-  /* line 368, ../sass/_media.scss */
+  /* line 469, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-slide .slider-title {
     left: 25%;
     transform: translateX(-25%);
   }
 
-  /* line 377, ../sass/_media.scss */
+  /* line 478, ../sass/_media.scss */
   .home-about .home-about-description .visible-description {
     display: inline;
   }
 
-  /* line 400, ../sass/_media.scss */
+  /* line 501, ../sass/_media.scss */
   .about-page .about-content .section-title:after,
   .about-page .services-content .section-title:after,
   .about-page .reviews-content .section-title:after,
@@ -2084,52 +2686,52 @@ footer .copyright .term-and-privacy a:hover {
     width: 550px;
   }
 
-  /* line 412, ../sass/_media.scss */
+  /* line 513, ../sass/_media.scss */
   .reviews-page .reviews-content .reviews-list li:after {
     width: 550px;
   }
 
-  /* line 424, ../sass/_media.scss */
+  /* line 525, ../sass/_media.scss */
   .blog-more-page .blog-more-content .section-title {
     display: none;
   }
-  /* line 428, ../sass/_media.scss */
+  /* line 529, ../sass/_media.scss */
   .blog-more-page .blog-more-content .blog-more-img-container-more {
     float: left;
     margin: 0 20px 10px 0;
   }
-  /* line 433, ../sass/_media.scss */
+  /* line 534, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-title-more {
     margin: 0 auto 12px;
   }
-  /* line 437, ../sass/_media.scss */
+  /* line 538, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-content-more {
     margin: 15px auto 0;
   }
-  /* line 440, ../sass/_media.scss */
+  /* line 541, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-content-more:last-of-type {
     margin-bottom: 30px;
   }
-  /* line 443, ../sass/_media.scss */
+  /* line 544, ../sass/_media.scss */
   .blog-more-page .blog-more-content .post-content-more span {
     display: inline;
   }
-  /* line 448, ../sass/_media.scss */
+  /* line 549, ../sass/_media.scss */
   .blog-more-page .blog-more-content .mobile-slider {
     display: none;
   }
-  /* line 451, ../sass/_media.scss */
+  /* line 552, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider {
     display: block;
   }
-  /* line 453, ../sass/_media.scss */
+  /* line 554, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
   }
-  /* line 459, ../sass/_media.scss */
+  /* line 560, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -2148,58 +2750,58 @@ footer .copyright .term-and-privacy a:hover {
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 477, ../sass/_media.scss */
+  /* line 578, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-slide img {
     max-width: 90%;
   }
-  /* line 482, ../sass/_media.scss */
+  /* line 583, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-next, .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-prev {
     width: 20px;
     height: 30px;
   }
-  /* line 487, ../sass/_media.scss */
+  /* line 588, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-prev {
     background-image: none;
     background: url("../images/prev-btn.png") no-repeat;
   }
-  /* line 491, ../sass/_media.scss */
+  /* line 592, ../sass/_media.scss */
   .blog-more-page .blog-more-content .desctop-slider .swiper-container-desctop .swiper-button-next {
     background-image: none;
     background: url("../images/next-btn.png") no-repeat;
   }
-  /* line 497, ../sass/_media.scss */
+  /* line 598, ../sass/_media.scss */
   .blog-more-page .blog-more-content .videoWrapper {
     padding-bottom: 47.25%;
   }
 
-  /* line 507, ../sass/_media.scss */
+  /* line 608, ../sass/_media.scss */
   .contact-page .contact-content .contacts-list:after {
     width: 550px;
   }
 
-  /* line 516, ../sass/_media.scss */
+  /* line 617, ../sass/_media.scss */
   footer .footer-content {
     overflow: hidden;
   }
-  /* line 519, ../sass/_media.scss */
+  /* line 620, ../sass/_media.scss */
   footer .form-block {
     max-width: 390px;
     float: right;
   }
-  /* line 524, ../sass/_media.scss */
+  /* line 625, ../sass/_media.scss */
   footer .form-block #contact-form #name,
   footer .form-block #contact-form #email {
     width: 48%;
   }
-  /* line 529, ../sass/_media.scss */
+  /* line 630, ../sass/_media.scss */
   footer .form-block #contact-form #name {
     float: left;
   }
-  /* line 532, ../sass/_media.scss */
+  /* line 633, ../sass/_media.scss */
   footer .form-block #contact-form #email {
     float: right;
   }
-  /* line 538, ../sass/_media.scss */
+  /* line 639, ../sass/_media.scss */
   footer .social-block {
     float: right;
     clear: inherit;
@@ -2207,7 +2809,7 @@ footer .copyright .term-and-privacy a:hover {
     min-width: 150px;
     overflow: hidden;
   }
-  /* line 545, ../sass/_media.scss */
+  /* line 646, ../sass/_media.scss */
   footer .social-block .social-list {
     float: left;
     -webkit-box-sizing: border-box;
@@ -2215,34 +2817,34 @@ footer .copyright .term-and-privacy a:hover {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 548, ../sass/_media.scss */
+  /* line 649, ../sass/_media.scss */
   footer .social-block .social-list li {
     display: block;
     margin: 15px auto;
   }
-  /* line 553, ../sass/_media.scss */
+  /* line 654, ../sass/_media.scss */
   footer .social-block .social-list li a span {
     font-size: 20px;
   }
-  /* line 560, ../sass/_media.scss */
+  /* line 661, ../sass/_media.scss */
   footer .phone-block {
     display: none;
   }
-  /* line 564, ../sass/_media.scss */
+  /* line 665, ../sass/_media.scss */
   footer .footer-menu {
     display: block;
     float: left;
     max-width: 385px;
     overflow: hidden;
   }
-  /* line 570, ../sass/_media.scss */
+  /* line 671, ../sass/_media.scss */
   footer .footer-menu .menu-list {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 572, ../sass/_media.scss */
+  /* line 673, ../sass/_media.scss */
   footer .footer-menu .menu-list li {
     text-align: left;
     display: block;
@@ -2250,20 +2852,20 @@ footer .copyright .term-and-privacy a:hover {
     width: 49%;
     margin: 5px 0;
   }
-  /* line 578, ../sass/_media.scss */
+  /* line 679, ../sass/_media.scss */
   footer .footer-menu .menu-list li a {
     color: black;
     font: 400 15px/20px "Open Sans", sans-serif;
   }
-  /* line 582, ../sass/_media.scss */
+  /* line 683, ../sass/_media.scss */
   footer .footer-menu .menu-list li a:hover {
     text-decoration: underline;
   }
-  /* line 586, ../sass/_media.scss */
+  /* line 687, ../sass/_media.scss */
   footer .footer-menu .menu-list li a.footer-menu-active {
     text-decoration: underline;
   }
-  /* line 594, ../sass/_media.scss */
+  /* line 695, ../sass/_media.scss */
   footer .copyright .term-and-privacy a {
     display: inline-block;
     margin: 0 10px;

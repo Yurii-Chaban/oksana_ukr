@@ -12,6 +12,34 @@
 			}
 		}
 	}
+	// FOR FILL PAGE 
+	.fill-page {
+		.fill-content {
+			.form-wrapper {
+				#fill-form {
+					.fot-birthday {
+						.ui.compact.selection.dropdown {
+							width: 32.5%;
+							margin: auto;
+						}
+						.ui.compact.selection.dropdown.birthday-month {
+							width: 32.5%;
+							margin: auto;
+						}
+					}
+					.for-question-circle {
+						.question-circle {
+							.lang-popup {
+								top: 22px;
+								left: 0;
+								transform: inherit;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -240,6 +268,79 @@
 						#form-message {
 							float: right;
 							width: 70%;
+						}
+					}
+				}
+			}
+		}
+	}
+	// FOR FILL PAGE
+	.fill-page {
+		.fill-content {
+			.wrap-welcome {
+				.wrap-word {
+					span {
+						display: inline;
+					}
+				}
+			}
+			.form-wrapper {
+				#fill-form {
+					.for-name,
+					.for-surname {
+						clear: both;
+						min-height: 36px;
+						label {
+							width: 50%;
+							float: left;
+						}
+						input {
+							width: 50%;
+							float: right;
+						}
+					}
+					.fot-birthday,
+					.for-country,
+					.for-city,
+					.for-region,
+					.for-town,
+					.for-address,
+					.for-nationality,
+					.for-email,
+					.for-phone,
+					.for-family-status,
+					.for-children,
+					.for-future-children,
+					.for-growth,
+					.for-body-type,
+					.for-weight,
+					.for-hair-color,
+					.for-eyes-color {
+							clear: both;
+							min-height: 36px;
+						label {
+							width: 50%;
+							float: left;
+						}
+						.grouping-container,
+						.country-select,
+						.select-city,
+						#region,
+						#city_willage_town,
+						#address,
+						#nationality,
+						#email,
+						#phone,
+						#family-status,
+						#children ,
+						#future-children,
+						#growth,
+						#body-type,
+						#weight,
+						#hair-color,
+						#eyes-color {
+							float: right;
+							width: 50%;
 						}
 					}
 				}

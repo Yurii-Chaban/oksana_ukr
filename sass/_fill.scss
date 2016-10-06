@@ -49,6 +49,8 @@
 		}
 
 		.form-wrapper {
+			max-width: 725px;
+			margin: 0 auto;
 			.form-title {
 				margin: 20px auto 26px;
 				color: black;
@@ -58,13 +60,51 @@
 			}
 
 			#fill-form {
+				overflow: hidden;
 
 				i.icon.angle.down:before {
 					content: "\f107";
-					font-family: 'Icon'
+					font-family: 'Icon';
+					font-size: 30px;
+					color: #fff;
+				}
+
+				.ui.selection.dropdown>.dropdown.icon {
+					cursor: pointer;
+					position: absolute;
+					background-color: #f29912;
+					width: auto;
+					height: auto;
+					line-height: 1.2142em;
+					top: .7em;
+					right: 0.8em;
+					z-index: 3;
+					margin: -.78571429em;
+					// padding: .78571429em;
+					padding: 12px 0 0 0;
+					opacity: .8;
+					-webkit-transition: opacity .1s ease;
+					transition: opacity .1s ease;
+				}
+				.ui.selection.dropdown>.dropdown.icon {
+					width: 33px;
+					height: 36px;
+				}
+				.ui.selection.dropdown {
+					min-height: 36px;
+					padding: .5em 2.7em .2em 0.5em;
+					&>.text{
+						color: black;
+						font: 400 18px / 20px $OpenSans;
+					}
+				}
+				.selection.dropdown {
+					width: 100%;
 				}
 
 				label {
+					display: inline-block;
+					margin: 0 0 8px 0;
 					color: black;
 					font: 400 18px / 22px $OpenSans;
 				}
@@ -95,53 +135,246 @@
 				}
 
 				.row {
+					margin: 25px auto 0;
 					&>label {
 						display: block;
 					}
 				}
+				.for-surname {
+
+				}
+				.fot-birthday {
+					.ui.dropdown>.text {
+						color: black;
+						font: 400 13px / 18px $OpenSans;
+					}
+					.ui.compact.selection.dropdown {
+						min-width: 85px;
+						width: 29%;
+						margin: 0 -1px;
+					}
+
+					.ui.compact.selection.dropdown.birthday-month {
+						min-width: 114px;
+						width: 40%;
+					}
+				}
+				// .for-country {}
+				.for-city {
+					.select-city {
+						width: 100%;
+					}
+				}
+				// .for-region {}
+				// .for-town {}
+				// .for-address {}
+				// .for-nationality {}
+				.for-email {
+					label[for="email"] {
+						span {
+							display: none;
+						}
+					}
+				}
+				// .for-phone {}
+				// .for-family-status {}
+				// .for-children {}
+				// .for-future-children {}
+				// .for-growth {}
+				// .for-body-type {}
+				// .for-weight {}
+				// .for-hair-color {}
+				// .for-eyes-color {}
+				.for-character-traits {
+					input[type="checkbox"] {
+						display: inline-block;
+						width: 14px;
+						height: 14px;
+						margin: 0 11px 0 0;
+						border: 1px solid rgba(15, 16, 16, 0.36);
+					}
+				}
+				.for-question-circle {
+					.styling-item {
+						display: block;
+						margin: 0 0 20px 0;
+						color: black;
+						font: 400 18px / 20px $OpenSans;
+					}
+
+					.question-circle {
+						width: 24px !important;
+						height: 22px !important;
+						background: #F29912;
+						border-radius: 50%;
+						position: relative;
+						display: inline-block;
+						left: 15px;
+						top: 0;
+						text-align: center;
+						color: #FFFFFF;
+						font-size: 18px;
+						line-height: 21px;
+						.lang-popup {
+							display: none;
+							position: absolute;
+							padding: 10px;
+							left: 20%;
+							transform: translateX(-80%);
+							z-index: 1;
+							top: 23px;
+							background: #fff;
+							border: 1px solid #F29912;
+							width: 250px;
+							color: #3a3a3a;
+							text-align: left;
+							b {
+								font-weight: bold;
+							}
+						}
+
+						&:hover .lang-popup {
+							display: block;
+						}
+					}
+
+					.girlLangList {
+						li {
+							margin: 5px 0;
+
+							input[type="checkbox"] {
+								width: 14px;
+								height: 14px;
+								border: 1px solid rgba(15, 16, 16, 0.36);
+							}
+							.radio-container {
+								margin: 3px 0;
+								div {
+									display: inline-block;
+									input[type="radio"] {
+										display: inline-block;
+										width: auto;
+									}
+								}
+							}
+						}
+					}
+				}
+				.for-girl-interesting {
+
+					.interesting-title {
+						display: block;
+						margin: 0 0 10px 0;
+						color: black;
+						font: 400 18px / 20px $OpenSans;
+					}
+					label {
+						display: inline;
+						margin: 0;
+					}
+					input[type="checkbox"] {
+						width: 14px;
+						height: 14px;
+						border: 1px solid rgba(15, 16, 16, 0.36);
+					}
+				}
+				.for-about-yourself {
+					#about-yourself {
+						width: 100%;
+						height: 123px;
+						padding: 10px 0 0 10px;
+						border: 1px solid rgba(15, 16, 16, 0.36);
+					}
+				}
+				.for-man-age {
+					.age-from,
+					.age-to {
+						width: 47%;
+						margin: 0 1%;
+					} 
+				}
+				.for-wishes-to-partner {
+					#wishes-to-partner {
+						width: 100%;
+						height: 123px;
+						padding: 10px 0 0 10px;
+						border: 1px solid rgba(15, 16, 16, 0.36);
+					}
+				}
+				.for-upload-picture {
+					#upload-btn {
+						display: block;
+						height: 39px;
+						margin: 15px auto 30px;
+						font: 400 15px / 39px $OpenSans;
+						text-transform: uppercase;
+						color: #fff;
+						background-color: #f29912;
+						text-align: center;
+						border: 1px solid white;
+					}
+				}
+				.for-upload-ather {
+					#upload-ather-btn {
+						display: block;
+						height: 55px;
+						margin: 15px auto 30px;
+						background-color: #f29912;
+						text-align: center;
+						border: 1px solid white;
+						span {
+							display: block;
+							margin-top: 12px;
+							font: 400 15px / 17px $OpenSans;
+							text-transform: uppercase;
+							color: #fff;
+						}
+					}
+				}
+				.for-agree {
+					overflow: hiddenl;
+					#agreement {
+						display: block;
+						float: left;
+						width: 14px;
+						height: 14px;
+						margin: 20px 15px 0 0;
+						border: 1px solid rgba(15, 16, 16, 0.36);
+					}
+					label[for="agreement"] {
+						display: block;
+						float: left;
+						width: 90%;
+						height: 55px;
+						background-color: #f29912;
+						text-align: center;
+						border: 1px solid white;
+						span {
+							display: block;
+							margin-top: 12px;
+							font: 400 15px / 17px $OpenSans;
+							text-transform: uppercase;
+							color: #fff;
+						}
+					}
+				}
+				// .for-attitude-towards-smoking {}
+				// .for-worship {}
+			}
+
+			input#submit-girl-form {
+				display: block;
+				float: right;
+				width: 149px;
+				height: 39px;
+				margin: 20px 0 30px;
+				color: white;
+				font: 400 18px / 39px $OpenSans;
+				text-transform: uppercase;
+				background-color: #f29912;
+				border: 1px solid white;
+				cursor: pointer;
 			}
 		}
-
-	}
-}
-
-
-
-
-
-.question-circle {
-	width: 24px !important;
-	height: 22px !important;
-	background: #F29912;
-	border-radius: 50%;
-	position: relative;
-	display: inline-block;
-	left: 15px;
-	top: 0;
-	text-align: center;
-	color: #FFFFFF;
-	font-size: 18px;
-	line-height: 21px;
-
-	.lang-popup {
-		display: none;
-		position: absolute;
-		padding: 10px;
-		left: 0px;
-		z-index: 1;
-		top: 23px;
-		background: #fff;
-		border: 1px solid #F29912;
-		width: 250px;
-		color: #3a3a3a;
-		text-align: left;
-
-		b {
-			font-weight: bold;
-		}
-	}
-
-	&:hover .lang-popup {
-		display: block;
 	}
 }
