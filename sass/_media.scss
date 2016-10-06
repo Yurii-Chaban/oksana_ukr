@@ -291,11 +291,11 @@
 						clear: both;
 						min-height: 36px;
 						label {
-							width: 50%;
+							width: 47%;
 							float: left;
 						}
 						input {
-							width: 50%;
+							width: 53%;
 							float: right;
 						}
 					}
@@ -315,11 +315,26 @@
 					.for-body-type,
 					.for-weight,
 					.for-hair-color,
-					.for-eyes-color {
-							clear: both;
-							min-height: 36px;
-						label {
-							width: 50%;
+					.for-eyes-color,
+					.for-character-traits,
+					.for-attitude-towards-smoking,
+					.for-worship,
+					.for-education,
+					.for-currently-work,
+					.for-question-circle,
+					.for-girl-interesting,
+					.for-zodiac,
+					.for-about-yourself,
+					.for-man-age,
+					.for-wishes-to-partner,
+					.for-upload-picture,
+					.for-upload-ather	 {
+						clear: both;
+						min-height: 36px;
+						label,
+						.styling-item,
+						.interesting-title {
+							width: 47%;
 							float: left;
 						}
 						.grouping-container,
@@ -338,10 +353,135 @@
 						#body-type,
 						#weight,
 						#hair-color,
-						#eyes-color {
+						#eyes-color,
+						.character-traits,
+						#attitude-towards-smoking,
+						#worship,
+						#education,
+						#currently-work,
+						.girlLangList,
+						.girl-interesting-block,
+						#zodiac-sign,
+						#about-yourself,
+						.age-container,
+						#wishes-to-partner,
+						.btn-container {
 							float: right;
-							width: 50%;
+							width: 53%;
 						}
+						#upload-btn {
+							width: 281px;
+							margin: 0;
+						}
+						#upload-ather-btn {
+							width: 363px;
+							height: 39px;
+							margin: 0;
+						}
+
+						.character-traits,
+						.girl-interesting-block {
+							.left,
+							.left-block,
+							.right,
+							.right-block {
+								width: 50%;
+								li {
+									label {
+										font-size: 15px;
+										line-height: 18px;
+									}
+								}
+							}
+							.left,
+							.left-block {
+								float: left;
+							}
+							.right,
+							.right-block {
+								float: right;
+							}
+						}
+					}
+					.for-about-yourself,
+					.for-wishes-to-partner {
+						min-height: 130px;
+					}
+					.for-email {
+						label[for="email"] {
+							span {
+								display: inline;
+							}
+						}
+					}
+					.for-character-traits,
+					.for-girl-interesting {
+						min-height: 1035px;
+						li {
+							clear: both;
+							overflow: hidden;
+							input[type="checkbox"] {
+								float: left;
+								margin: 3px 3px 0 0;
+							}
+						}
+					}
+					.for-girl-interesting {
+						min-height: 560px;
+					}
+					.for-question-circle {
+						min-height: 350px;
+
+						.girlLangList {
+							li {
+								clear: both;
+								overflow: hidden;
+								input[type="checkbox"] {
+									float: left;
+									margin: 5px 3px 0 0;
+								}
+								label[for="english"],
+								label[for="germany"],
+								label[for="french"],
+								label[for="italian"],
+								label[for="spanish"],
+								label[for="russian"] {
+									float: left;
+									width: auto;
+								}
+								.radio-container {
+									float: right;
+								}
+							}
+						}
+					}
+					.for-agree {
+						overflow: hidden;
+						clear: both;
+						margin: 0 auto;
+						text-align: center;
+
+						#agreement {
+							display: inline-block;
+							float: inherit;
+						}
+
+						label[for="agreement"] {
+							float: inherit;
+							display: inline-block;
+							width: 431px;
+							height: 26px;
+							margin: 13px 0 0;
+							background-color: #f29912;
+							border: 1px solid white;
+							span {
+								margin-top: 4px;
+							}
+						}
+					}
+					#submit-girl-form {
+						float: inherit;
+						margin: 20px auto 30px;
 					}
 				}
 			}
