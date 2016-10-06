@@ -644,6 +644,26 @@
 		}
 	}
 }
+.fill-page {
+	.fill-content {
+		.wrap-welcome {
+			&:after {
+				width: 550px;
+			}
+		}
+	}
+}
+.blog-page {
+	.blog-content {
+		.blog-list {
+			li {
+				&:after {
+					width: 550px;
+				}
+			}
+		}
+	}
+}
 
 // FOR REVIEWS PAGE
 .reviews-page {

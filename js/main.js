@@ -105,8 +105,7 @@ var swiper = new Swiper('.swiper-container-desctop', {
 // FOR DROPDOWN ACTIVE
 $(document).ready(function($) {
     $('.ui.dropdown')
-    .dropdown()
-    ;
+    .dropdown();
 });     
 // FOR DISABLED / ANABLED LENGUAGE
 $( document ).ready(function() {
