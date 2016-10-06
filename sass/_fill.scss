@@ -93,6 +93,7 @@
 				.ui.selection.dropdown {
 					min-height: 36px;
 					padding: .5em 2.7em .2em 0.5em;
+					border-radius: inherit;
 					&>.text{
 						color: black;
 						font: 400 18px / 20px $OpenSans;

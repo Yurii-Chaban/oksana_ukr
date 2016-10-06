@@ -1625,33 +1625,34 @@ footer .copyright .term-and-privacy a:hover {
 .fill-page .fill-content .form-wrapper #fill-form .ui.selection.dropdown {
   min-height: 36px;
   padding: .5em 2.7em .2em 0.5em;
+  border-radius: inherit;
 }
-/* line 96, ../sass/_fill.scss */
+/* line 97, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .ui.selection.dropdown > .text {
   color: black;
   font: 400 18px/20px "Open Sans", sans-serif;
 }
-/* line 101, ../sass/_fill.scss */
+/* line 102, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .selection.dropdown {
   width: 100%;
 }
-/* line 105, ../sass/_fill.scss */
+/* line 106, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form label {
   display: inline-block;
   margin: 0 0 8px 0;
   color: black;
   font: 400 18px/22px "Open Sans", sans-serif;
 }
-/* line 112, ../sass/_fill.scss */
+/* line 113, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input,
 .fill-page .fill-content .form-wrapper #fill-form textarea {
   outline: none;
 }
-/* line 117, ../sass/_fill.scss */
+/* line 118, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form textarea {
   resize: none;
 }
-/* line 121, ../sass/_fill.scss */
+/* line 122, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1665,44 +1666,44 @@ footer .copyright .term-and-privacy a:hover {
   background: inherit;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 132, ../sass/_fill.scss */
+/* line 133, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form input[type="checkbox"],
 .fill-page .fill-content .form-wrapper #fill-form input[type="radio"] {
   height: auto;
 }
-/* line 137, ../sass/_fill.scss */
+/* line 138, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .row {
   margin: 25px auto 0;
 }
-/* line 139, ../sass/_fill.scss */
+/* line 140, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .row > label {
   display: block;
 }
-/* line 147, ../sass/_fill.scss */
+/* line 148, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.dropdown > .text {
   color: black;
   font: 400 13px/18px "Open Sans", sans-serif;
 }
-/* line 151, ../sass/_fill.scss */
+/* line 152, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.compact.selection.dropdown {
   min-width: 85px;
   width: 29%;
   margin: 0 -1px;
 }
-/* line 157, ../sass/_fill.scss */
+/* line 158, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .fot-birthday .ui.compact.selection.dropdown.birthday-month {
   min-width: 114px;
   width: 40%;
 }
-/* line 164, ../sass/_fill.scss */
+/* line 165, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-city .select-city {
   width: 100%;
 }
-/* line 174, ../sass/_fill.scss */
+/* line 175, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-email label[for="email"] span {
   display: none;
 }
-/* line 189, ../sass/_fill.scss */
+/* line 190, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-character-traits input[type="checkbox"] {
   display: inline-block;
   width: 14px;
@@ -1710,14 +1711,14 @@ footer .copyright .term-and-privacy a:hover {
   margin: 0 11px 0 0;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 198, ../sass/_fill.scss */
+/* line 199, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .styling-item {
   display: block;
   margin: 0 0 20px 0;
   color: black;
   font: 400 18px/20px "Open Sans", sans-serif;
 }
-/* line 205, ../sass/_fill.scss */
+/* line 206, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle {
   width: 24px !important;
   height: 22px !important;
@@ -1732,7 +1733,7 @@ footer .copyright .term-and-privacy a:hover {
   font-size: 18px;
   line-height: 21px;
 }
-/* line 218, ../sass/_fill.scss */
+/* line 219, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle .lang-popup {
   display: none;
   position: absolute;
@@ -1747,76 +1748,76 @@ footer .copyright .term-and-privacy a:hover {
   color: #3a3a3a;
   text-align: left;
 }
-/* line 231, ../sass/_fill.scss */
+/* line 232, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle .lang-popup b {
   font-weight: bold;
 }
-/* line 236, ../sass/_fill.scss */
+/* line 237, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .question-circle:hover .lang-popup {
   display: block;
 }
-/* line 242, ../sass/_fill.scss */
+/* line 243, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li {
   margin: 5px 0;
 }
-/* line 245, ../sass/_fill.scss */
+/* line 246, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li input[type="checkbox"] {
   width: 14px;
   height: 14px;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 250, ../sass/_fill.scss */
+/* line 251, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li .radio-container {
   margin: 3px 0;
 }
-/* line 252, ../sass/_fill.scss */
+/* line 253, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li .radio-container div {
   display: inline-block;
 }
-/* line 254, ../sass/_fill.scss */
+/* line 255, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-question-circle .girlLangList li .radio-container div input[type="radio"] {
   display: inline-block;
   width: auto;
 }
-/* line 265, ../sass/_fill.scss */
+/* line 266, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-girl-interesting .interesting-title {
   display: block;
   margin: 0 0 10px 0;
   color: black;
   font: 400 18px/20px "Open Sans", sans-serif;
 }
-/* line 271, ../sass/_fill.scss */
+/* line 272, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-girl-interesting label {
   display: inline;
   margin: 0;
 }
-/* line 275, ../sass/_fill.scss */
+/* line 276, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-girl-interesting input[type="checkbox"] {
   width: 14px;
   height: 14px;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 282, ../sass/_fill.scss */
+/* line 283, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-about-yourself #about-yourself {
   width: 100%;
   height: 123px;
   padding: 10px 0 0 10px;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 290, ../sass/_fill.scss */
+/* line 291, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-man-age .age-from,
 .fill-page .fill-content .form-wrapper #fill-form .for-man-age .age-to {
   width: 47%;
   margin: 0 1%;
 }
-/* line 297, ../sass/_fill.scss */
+/* line 298, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-wishes-to-partner #wishes-to-partner {
   width: 100%;
   height: 123px;
   padding: 10px 0 0 10px;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 305, ../sass/_fill.scss */
+/* line 306, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-upload-picture #upload-btn {
   display: block;
   height: 39px;
@@ -1828,7 +1829,7 @@ footer .copyright .term-and-privacy a:hover {
   text-align: center;
   border: 1px solid white;
 }
-/* line 318, ../sass/_fill.scss */
+/* line 319, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-upload-ather #upload-ather-btn {
   display: block;
   height: 55px;
@@ -1837,7 +1838,7 @@ footer .copyright .term-and-privacy a:hover {
   text-align: center;
   border: 1px solid white;
 }
-/* line 325, ../sass/_fill.scss */
+/* line 326, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-upload-ather #upload-ather-btn span {
   display: block;
   margin-top: 12px;
@@ -1845,11 +1846,11 @@ footer .copyright .term-and-privacy a:hover {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 334, ../sass/_fill.scss */
+/* line 335, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-agree {
   overflow: hidden;
 }
-/* line 336, ../sass/_fill.scss */
+/* line 337, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-agree #agreement {
   display: block;
   float: left;
@@ -1858,7 +1859,7 @@ footer .copyright .term-and-privacy a:hover {
   margin: 20px 15px 0 0;
   border: 1px solid rgba(15, 16, 16, 0.36);
 }
-/* line 344, ../sass/_fill.scss */
+/* line 345, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-agree label[for="agreement"] {
   display: block;
   float: left;
@@ -1868,7 +1869,7 @@ footer .copyright .term-and-privacy a:hover {
   text-align: center;
   border: 1px solid white;
 }
-/* line 352, ../sass/_fill.scss */
+/* line 353, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper #fill-form .for-agree label[for="agreement"] span {
   display: block;
   margin-top: 12px;
@@ -1876,7 +1877,7 @@ footer .copyright .term-and-privacy a:hover {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 365, ../sass/_fill.scss */
+/* line 366, ../sass/_fill.scss */
 .fill-page .fill-content .form-wrapper input#submit-girl-form {
   display: block;
   float: right;
